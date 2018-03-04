@@ -378,7 +378,7 @@
 
     <div class="copyright">
     	
-        &copy; 2016 Berwyn
+        &copy; 2018 Berwyn
         
         <div class="publishby">
         <!--	<`%= __('copyright.theme_by')  <a href="https://github.com/cofess" target="_blank"> cofess </a><`%= __('copyright.base_on')  <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>. -->
@@ -406,7 +406,7 @@ var open = function() {
     var errorContainer = repoContainer.find(".blankslate");
     var countContainer = $("#repo-count");
 
-    $.get("https://api.github.com/users/berwyns/repos", function(result) {
+    $.get("https://api.github.com/users/boventan/repos", function(result) {
       if (result) {
         errorContainer.remove();
         countContainer.text(result.length); //设置项目个数
