@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.berwyn.cn/about/index.html</loc>
+    
+    <lastmod>2018-03-04T16:48:13.331Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.berwyn.cn/repository/index.html</loc>
     
-    <lastmod>2018-03-04T16:00:06.490Z</lastmod>
+    <lastmod>2018-03-04T16:43:44.800Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>https://www.berwyn.cn/links/links.json</loc>
     
     <lastmod>2018-01-14T09:08:26.347Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.berwyn.cn/about/index.html</loc>
-    
-    <lastmod>2018-01-14T08:20:51.033Z</lastmod>
     
   </url>
   
