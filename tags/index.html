@@ -14,6 +14,17 @@
   <meta name="theme-color" content="#000000" />
   <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
   <meta http-equiv="window-target" content="_top" />
+  <!-- 输入密码访问文章 -->
+  <script>
+    (function(){
+        if('{{ page.password }}'){
+            if (prompt('请输入文章密码') !== '{{ page.password }}'){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
   
   
   <title>标签 | 并没有什么好标题</title>
@@ -340,11 +351,11 @@
           
           <li><a href="/tags/网站运营/">网站运营</a></li>
           
-          <li><a href="/tags/Jekyll/">Jekyll</a></li>
+          <li><a href="/tags/数字货币/">数字货币</a></li>
           
           <li><a href="/tags/互动小说/">互动小说</a></li>
           
-          <li><a href="/tags/数字货币/">数字货币</a></li>
+          <li><a href="/tags/Jekyll/">Jekyll</a></li>
           
         </ul>
       </nav>
@@ -603,7 +614,7 @@
       </div>
       
       <h3 class="panel-title mb-1x">
-        <a href="/tags/Jekyll/" title="#Jekyll"># Jekyll</a>
+        <a href="/tags/数字货币/" title="#数字货币"># 数字货币</a>
         <small class="text-muted">(Total 1 articles)</small>
       </h3>
       <div class="row">
@@ -613,18 +624,16 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2017-06-13T02:17:29.000Z" itemprop="datePublished">2017-06-13</time>
+       <time datetime="2018-01-14T06:04:24.000Z" itemprop="datePublished">2018-01-14</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2017/06/快速使用Jekyll-now在Github搭建博客.html">快速使用Jekyll-now在Github搭建博客</a>
+       <a class="article-link" href="/2018/01/这两年免费薅过的一些虚拟货币的羊毛.html">这两年免费薅过的一些数字货币的羊毛</a>
      </h3>
    </div>
    
    <div class="panel-footer">
      
-      <a href="/tags/Github/" class="label label-default mb">Github</a>
-     
-      <a href="/tags/Jekyll/" class="label label-default mb">Jekyll</a>
+      <a href="/tags/数字货币/" class="label label-default mb">数字货币</a>
      
    </div>
    
@@ -667,7 +676,7 @@
       </div>
       
       <h3 class="panel-title mb-1x">
-        <a href="/tags/数字货币/" title="#数字货币"># 数字货币</a>
+        <a href="/tags/Jekyll/" title="#Jekyll"># Jekyll</a>
         <small class="text-muted">(Total 1 articles)</small>
       </h3>
       <div class="row">
@@ -677,16 +686,18 @@
 <article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
-       <time datetime="2018-01-14T06:04:24.000Z" itemprop="datePublished">2018-01-14</time>
+       <time datetime="2017-06-13T02:17:29.000Z" itemprop="datePublished">2017-06-13</time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2018/01/这两年免费薅过的一些虚拟货币的羊毛.html">这两年免费薅过的一些数字货币的羊毛</a>
+       <a class="article-link" href="/2017/06/快速使用Jekyll-now在Github搭建博客.html">快速使用Jekyll-now在Github搭建博客</a>
      </h3>
    </div>
    
    <div class="panel-footer">
      
-      <a href="/tags/数字货币/" class="label label-default mb">数字货币</a>
+      <a href="/tags/Github/" class="label label-default mb">Github</a>
+     
+      <a href="/tags/Jekyll/" class="label label-default mb">Jekyll</a>
      
    </div>
    
