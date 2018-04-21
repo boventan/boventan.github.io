@@ -162,7 +162,7 @@
     <link href="https://www.berwyn.cn/2017/06/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8Jekyll-now%E5%9C%A8Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html"/>
     <id>https://www.berwyn.cn/2017/06/快速使用Jekyll-now在Github搭建博客.html</id>
     <published>2017-06-13T02:17:29.000Z</published>
-    <updated>2018-03-09T06:42:54.060Z</updated>
+    <updated>2018-04-21T06:41:01.101Z</updated>
     
     <content type="html"><![CDATA[<p>本来想学会用Jekyll和Hexo在Github搭建博客的，然后不出意外的困在本地部署上了。</p><p>再然后瞎搜了搜，就发现了可以在线编辑的利器 —— <a href="https://github.com/barryclark/jekyll-now" target="_blank" rel="noopener">Jekyll-now</a> !</p><p>不过…… <del>通过勤查苦试</del>我还是学会了 Hexo ，所以分享下吧，也许有人需要呢。</p><a id="more"></a><h4 id="Jekyll-now主要功能："><a href="#Jekyll-now主要功能：" class="headerlink" title="Jekyll-now主要功能："></a>Jekyll-now主要功能：</h4><ul><li>响应式以及移动客户端优化的主题</li><li>Markdown 支持</li><li>语法高亮</li><li>集成 Disqus 评论</li><li>集成 Google Analytics 统计</li><li>底部提供 SVG 格式的社会化图标</li><li>极少的 http 请求</li><li>无需安装依赖</li><li>无需设置本地开发环境</li><li>无需配置插件</li><li>无需花费时间在主题上</li></ul><h4 id="Jekyll-now部署步骤："><a href="#Jekyll-now部署步骤：" class="headerlink" title="Jekyll-now部署步骤："></a>Jekyll-now部署步骤：</h4><ol><li>前往 Jekyll-now Fork项目 ；</li><li>在设置里将项目名称改为 yourgithubusername.github.io ，如：berwyns.github.io ；</li><li>在 _config.yml 文件里修改博客名称、描述以及头像 ；</li><li>开始访问你的博客，yourgithubusername.github.io 。</li></ol><h4 id="为什么写这篇文章？"><a href="#为什么写这篇文章？" class="headerlink" title="为什么写这篇文章？"></a>为什么写这篇文章？</h4><p>因为网上教使用Jekyll-now搭建博客的中文教程屈指可数，这么好的引流材料为什么不用呢？</p><p>突然感觉自己很机智，SEO意识666~~~</p>]]></content>
     
@@ -172,7 +172,7 @@
     
     </summary>
     
-      <category term="分享教程" scheme="https://www.berwyn.cn/categories/%E5%88%86%E4%BA%AB%E6%95%99%E7%A8%8B/"/>
+      <category term="分享创造" scheme="https://www.berwyn.cn/categories/%E5%88%86%E4%BA%AB%E5%88%9B%E9%80%A0/"/>
     
     
       <category term="Jekyll" scheme="https://www.berwyn.cn/tags/Jekyll/"/>
