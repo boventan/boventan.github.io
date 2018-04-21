@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.berwyn.cn/"/>
-  <updated>2018-04-20T21:19:03.751Z</updated>
+  <updated>2018-04-21T04:02:22.677Z</updated>
   <id>https://www.berwyn.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>百度Web前端技术学院</title>
+    <link href="https://www.berwyn.cn/2018/04/%E7%99%BE%E5%BA%A6%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E7%BC%96%E7%A0%81%E6%8C%91%E6%88%98.html"/>
+    <id>https://www.berwyn.cn/2018/04/百度前端技术学院编码挑战.html</id>
+    <published>2018-04-22T16:54:51.000Z</published>
+    <updated>2018-04-21T04:02:22.677Z</updated>
+    
+    <content type="html"><![CDATA[<p>百度Web前端技术学院（Baidu Institute of Front-End Technology简称IFE）是一个由百度EFE团队、百度人力资源部校园招聘组联合出品的、面向在校大学生的前端培训组织。</p><p>借助百度大量优秀的前端工程师以及丰富的前端知识积累，帮助大学生们更加高效、系统地学习Web前端技术。</p><a id="more"></a><p><img src="http://www.berwyn.cn/images/ife.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;百度Web前端技术学院（Baidu Institute of Front-End Technology简称IFE）是一个由百度EFE团队、百度人力资源部校园招聘组联合出品的、面向在校大学生的前端培训组织。&lt;/p&gt;
+&lt;p&gt;借助百度大量优秀的前端工程师以及丰富的前端知识积累，帮助大学生们更加高效、系统地学习Web前端技术。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端技术" scheme="https://www.berwyn.cn/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="百度" scheme="https://www.berwyn.cn/tags/%E7%99%BE%E5%BA%A6/"/>
+    
+      <category term="Web前端" scheme="https://www.berwyn.cn/tags/Web%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>一场突如其来的感慨</title>
@@ -37,30 +62,6 @@
       <category term="北京" scheme="https://www.berwyn.cn/tags/%E5%8C%97%E4%BA%AC/"/>
     
       <category term="橙光游戏" scheme="https://www.berwyn.cn/tags/%E6%A9%99%E5%85%89%E6%B8%B8%E6%88%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单个GitHub帐号下添加多个Pages</title>
-    <link href="https://www.berwyn.cn/2018/01/%E5%8D%95%E4%B8%AAGitHub%E5%B8%90%E5%8F%B7%E4%B8%8B%E6%B7%BB%E5%8A%A0%E5%A4%9A%E4%B8%AAPages.html"/>
-    <id>https://www.berwyn.cn/2018/01/单个GitHub帐号下添加多个Pages.html</id>
-    <published>2018-01-15T16:54:51.000Z</published>
-    <updated>2018-01-16T15:04:53.182Z</updated>
-    
-    <content type="html"><![CDATA[<p>记得某篇讲 Hexo 的文章里提到每个 GitHub 只能拥有一个 GitHub Pages 页面，所以后来一直不敢在自己的帐号底下添加除 Blog 外的其他 GitHub Pages 项目。</p><p>直到今天仔细研究了下GitHub的规则，才发现上面那句话有很大的问题。</p><p>这篇文章主要是讲 Github 下多个 GitHub Pages 项目相关以及自定义域名访问的问题.</p><a id="more"></a><p>没太多技术上的东西。基本上都是属于 GitHub 的文档意译和解释，英语好的可以直接看这官网这两篇FAQ：</p><ol><li><p><a href="https://help.github.com/articles/about-custom-domains-for-github-pages-sites/" target="_blank" rel="noopener">About custom domains for GitHub Pages sites</a></p></li><li><p><a href="https://help.github.com/articles/user-organization-and-project-pages/" target="_blank" rel="noopener">User, Organization, and Project Pages</a></p></li></ol><p>注：虽然全文基本上都在讲 GitHub Pages ，但我个人亲测这些规则也都适用于 GitCafe Pages ，两者没有本质区别。所以像我一样双线部署 Blog 的可以安心地把 GitHub 的东西搬到 GitCafe 来。</p><p>不过为了行文方便，下文不再特意强调 GitCafe Page ，均以 GitHub Pages 代指。(“ Coding “的是否也如此并不清楚，有心人可以自测)</p><h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>以我个人为例，我在GitHub上已经有了一个和用户名同名的 GitHub Pages 项目当作个人主页( <code>example.github.io</code> )，但是我现在又有了几个想法：</p><ol><li><p>再在 GitHub 上弄一个 GitHub Pages 项目当作我的 Demo 页面展示，而不是在原先的 Blog 项目下加子目录。(一来访问 url 不好看，二来很多主题会强制对所有项目内的文件添加样式，影响展示效果)</p></li><li><p>同时 Demo 页面的访问链接是我自定义的一个域名(如：是 <code>demo.example.com</code> 或者 <code>demo.example.github.io</code> 而不是 <code>example.github.io/demo</code> )</p></li></ol><blockquote><p>那么上面两个要求，GitHub 能否都满足呢？卖个关子先，结论放在下文。</p></blockquote><h2 id="GitHub-Pages-的分类及区别"><a href="#GitHub-Pages-的分类及区别" class="headerlink" title="GitHub Pages 的分类及区别"></a>GitHub Pages 的分类及区别</h2><p>根据官方文档，GitHub Pages 分为两类：个人/组织主页以及项目主页。</p><p>两者基本上没啥区别，但是有以下几点不同：(该文场景下个人和组织帐号没什么区别，所以下文为了行文方便将统一用个人主页代指)</p><ol><li><p>个人主页必须要和用户的 GitHub 帐号同名，所以每个用户有且只能有一个 Repo 作为个人主页，且必须是 <code>&lt;username&gt;/&lt;username&gt;.github.io</code> 的形式；而项目主页的命名则没有这种限制，且数量有任意多个。</p></li><li><p>不考虑绑定的自定义域名的前提下，个人主页的 GitHub 二级域名为 <code>&lt;username&gt;.github.io</code> ，项目主页的 GitHub 二级域名为 <code>&lt;username&gt;.github.io/&lt;projectname&gt;</code> ，没有 <code>&lt;projectname&gt;.&lt;username&gt;.github.io</code> 这种方式。</p></li><li><p>个人主页的展示内容以 master 分支里的文件为准，而项目主页的展示内容以 gh-pages 分支内的文件为准。</p></li></ol><blockquote><p>从上面的分析可以发现两个问题已经解决掉一个半了，那么剩下来的问题就是如何配置一个项目主页并绑定自定义域名了。</p></blockquote><h2 id="项目主页的建立和自定义域名配置"><a href="#项目主页的建立和自定义域名配置" class="headerlink" title="项目主页的建立和自定义域名配置"></a>项目主页的建立和自定义域名配置</h2><blockquote><p>注：配置过程和个人主页一模一样，如果之前配置过个人主页的，可以跳过这部分内容了</p></blockquote><h3 id="建立项目主页"><a href="#建立项目主页" class="headerlink" title="建立项目主页"></a>建立项目主页</h3><ol><li><p>新建一个 repo ，名字随意。</p></li><li><p>点进repo主页然后点击右面的 Settings ，页面往下拉到 GitHub Pages 部分，选择 <code>Launch automatic page generator &gt; Continue to layouts&gt;Publish page</code> 即可。(由于大部分情况下并不用默认的页面和样式，所以这里不需要太纠结于内容编辑)</p></li></ol><blockquote><p>这样一个项目主页就建立完成了，此时可以用 <code>&lt;username&gt;.github.io/&lt;projectname&gt;</code> 访问到了。</p></blockquote><h3 id="绑定自定义域名"><a href="#绑定自定义域名" class="headerlink" title="绑定自定义域名"></a>绑定自定义域名</h3><ul><li>在项目的 repo 里新建一个 CNAME 文件，并将不带协议名的裸域名写进去。( <code>demo.example.com</code> 而不是 <code>http://demo.example.com/</code> )</li></ul><blockquote><p>这一步可以参考 <a href="https://help.github.com/articles/adding-a-cname-file-to-your-repository/" target="_blank" rel="noopener">官方文档</a> 。</p></blockquote><ul><li><p>到你域名的 DNS 服务商里给对应的二级域名添加 CNAME 解析到 <code>&lt;username&gt;.github.io</code> 。(和个人主页的配置相同)</p></li><li><p>等待DNS生效，具体时间和服务商有关。(十几分钟到几小时都有可能)</p></li></ul><blockquote><p>如果不确定自己的解析是否生效了，可以在 Linux 系统下用 Dig 命令来检测，参考官方文档。</p></blockquote><h3 id="GitHub-和-GitCafe-双线部署的小-Tips"><a href="#GitHub-和-GitCafe-双线部署的小-Tips" class="headerlink" title="GitHub 和 GitCafe 双线部署的小 Tips"></a>GitHub 和 GitCafe 双线部署的小 Tips</h3><p>上面的配置对于单线部署的来说已经完成了，不过对于双线部署的用户而言，有几个小问题需要注意下</p><p>DNS 服务商里要按照来源对对应的二级域名做分流配置。</p><p>如果想要所有用户都可以用 <code>example.com/project</code> 的方式访问到 repo ，GitHub 和 GitCafe 的 repo 名字必须相同，否则会导致有一边跳 404 。可以参考我这里的例子：</p><blockquote><p>GitHub 上的项目主页名字为 demo ，GitCafe 上的项目主页名字为 demos ，则不翻墙的情况下国内用户访问 <code>example.com/demo</code> 会跳 404 ，而用 <code>demo.example.com</code> 则正常。</p></blockquote><blockquote><p>(另外同个链接在翻墙和不翻墙的情况下看到的页面不同，也是分线部署的功劳)</p></blockquote><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>聊胜于无的总结。对于上面提到的几个问题，也有了答案：</p><p>每个 GitHub 帐号下只能有 1 个个人主页 repo ，但是可以有不限数量的项目主页 repo 。</p><p>没有自定义域名的情况下，项目主页的访问链接只能是 <code>&lt;username&gt;.github.io/&lt;projectname&gt;</code> 而不是 <code>&lt;projectname&gt;.&lt;username&gt;.github.io</code> 。</p><blockquote><p> 本文链接：<a href="https://segmentfault.com/a/1190000003946969" target="_blank" rel="noopener">https://segmentfault.com/a/1190000003946969</a></p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;记得某篇讲 Hexo 的文章里提到每个 GitHub 只能拥有一个 GitHub Pages 页面，所以后来一直不敢在自己的帐号底下添加除 Blog 外的其他 GitHub Pages 项目。&lt;/p&gt;
-&lt;p&gt;直到今天仔细研究了下GitHub的规则，才发现上面那句话有很大的问题。&lt;/p&gt;
-&lt;p&gt;这篇文章主要是讲 Github 下多个 GitHub Pages 项目相关以及自定义域名访问的问题.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="分享教程" scheme="https://www.berwyn.cn/categories/%E5%88%86%E4%BA%AB%E6%95%99%E7%A8%8B/"/>
-    
-    
-      <category term="Github" scheme="https://www.berwyn.cn/tags/Github/"/>
     
   </entry>
   
