@@ -348,6 +348,16 @@
 
       </div>
     </div>
+	<script>
+    (function(){
+        if('{{ page.password }}'){
+            if (prompt('请输入文章密码') !== '{{ page.password }}'){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+	</script>
 	<!-- Google Adsense -->
 	<center><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- C1oud Web -->
