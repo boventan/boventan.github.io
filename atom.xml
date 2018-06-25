@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>并没有什么好标题</title>
+  <title>并没有什么好标题。</title>
   
   <subtitle>生而逐梦，不问归期。</subtitle>
   <link href="/atom.xml" rel="self"/>
