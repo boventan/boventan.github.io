@@ -60,8 +60,6 @@
   
     
     
-        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-    
 
 </head>
 
@@ -485,9 +483,10 @@
   <section id="comments">
   	
        
-
-
-    
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zMzIwNS85NzYy">
+  <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+      
     
   </section>
 
@@ -627,24 +626,20 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
     
         
     
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  // id默认为当前页面url，如果url后带参数或锚点，gitment要重新初始化
-  // https://github.com/imsun/gitment/issues/55
-  // 解决方案：id:window.location.pathname,或者将id设置为当前页面标题
-  id: '愿有生之年，我能有一款游戏走向世界', 
-  owner: 'boventan', // 可以是你的GitHub用户名，也可以是github id
-  repo: 'boventan.github.io',
-  oauth: {
-    client_id: '9bd69a18f1430c7b64aa',
-    client_secret: '2e5a8846ac3df1f4e5e107b024f1f18fda9e1699',
-  }
-})
-gitment.render('comments')
+<script defer type="text/javascript">
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+
+    if (typeof LivereTower === 'function') { return; }
+
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
 </script>
 
-    
 
     
     
