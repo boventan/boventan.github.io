@@ -32,7 +32,7 @@
 <meta property="og:site_name" content="并没有什么好标题。">
 <meta property="og:description" content="最近听说了一款挺火的软件，叫 “抖音”，发现它的标志有蓝红双色的叠加。网站文字能否做出这个效果，甚至让文字像这个一样抖起来？答案当然是可以的。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-01T14:50:49.453Z">
+<meta property="og:updated_time" content="2018-07-01T14:53:36.597Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="让你的网站文字“抖”起来">
 <meta name="twitter:description" content="最近听说了一款挺火的软件，叫 “抖音”，发现它的标志有蓝红双色的叠加。网站文字能否做出这个效果，甚至让文字像这个一样抖起来？答案当然是可以的。">
@@ -350,7 +350,7 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2017/06/让你的网站文字“抖”起来.html#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 295(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 291(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
@@ -378,7 +378,6 @@
 <h2 id="动态效果"><a href="#动态效果" class="headerlink" title="动态效果"></a>动态效果</h2><p>这种静态的效果我可不满足，想让它动起来，不需要任何 JavaScript，只需要 CSS3 动画即可完成。接下来我们就利用 CSS3 动画，让所有文字抖起来吧！</p>
 <h2 id="添加动画"><a href="#添加动画" class="headerlink" title="添加动画"></a>添加动画</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@keyframes shake-it&#123;</span><br><span class="line">    0%&#123;</span><br><span class="line">        text-shadow: 0 0 rgba(0, 255, 255, .5), 0 0 rgba(255, 0, 0, .5);</span><br><span class="line">    &#125;</span><br><span class="line">    25%&#123;</span><br><span class="line">        text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);</span><br><span class="line">    &#125;</span><br><span class="line">    50%&#123;</span><br><span class="line">        text-shadow: -5px 0 rgba(0, 255, 255, .5), 3px 0 rgba(255, 0, 0, .5);</span><br><span class="line">    &#125;</span><br><span class="line">    100%&#123;</span><br><span class="line">        text-shadow: 3px 0 rgba(0, 255, 255, .5), 5px 0 rgba(255, 0, 0, .5);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="添加属性"><a href="#添加属性" class="headerlink" title="添加属性"></a>添加属性</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    animation: shake-it .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>试玩一下</p>
 
       
     </div>
