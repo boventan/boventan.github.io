@@ -37,7 +37,7 @@
 <meta property="og:image" content="http://www.berwyn.cn/images/article/AppInfo.jpg">
 <meta property="og:image" content="http://www.berwyn.cn/images/article/Android.jpg">
 <meta property="og:image" content="http://www.berwyn.cn/images/article/Push.jpg">
-<meta property="og:updated_time" content="2018-07-01T17:24:30.217Z">
+<meta property="og:updated_time" content="2018-07-01T17:28:08.021Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何零基础快速制作出一个.apk">
 <meta name="twitter:description" content="由于一些原因有这个需求，经过多次百度谷歌和不断地踩坑后，终于学会了一个骚操作。 利用 HBuilder 零基础快速制作出一个 .apk ，此类 WebApp 支持上传到部分应用商店。">
@@ -386,7 +386,7 @@
 <h2 id="开始前的准备工作"><a href="#开始前的准备工作" class="headerlink" title="开始前的准备工作"></a>开始前的准备工作</h2><p>先到 <strong>HBuilder</strong> <a href="http://www.dcloud.io/" target="_blank" rel="noopener">官网</a> 下载软件，并进行安装。</p>
 <h2 id="创建移动APP模板"><a href="#创建移动APP模板" class="headerlink" title="创建移动APP模板"></a>创建移动APP模板</h2><p>在运行 <strong>HBuilder</strong> 后，依次选择 <strong>文件</strong> -&gt; <strong>新建</strong> -&gt; <strong>移动APP</strong> ，默认选择 <strong>空模板</strong> 即可。</p>
 <p><img src="http://www.berwyn.cn/images/article/CreatApp.jpg" alt=""></p>
-<h2 id="写入-WebView-代码"><a href="#写入-WebView-代码" class="headerlink" title="写入 WebView 代码"></a>写入 WebView 代码</h2><p>打开 <strong>index.html</strong> 文件，写入以下代码。</p>
+<h2 id="写入WebView代码"><a href="#写入WebView代码" class="headerlink" title="写入WebView代码"></a>写入WebView代码</h2><p>打开 <strong>index.html</strong> 文件，写入以下代码。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;</span><br><span class="line">			// 即将直接跳转至指定页</span><br><span class="line">			window.location.href = &quot;http://www.yoursite.com/yoururl&quot;;</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 <p>其实就是个网页跳转代码，因为经测试 iframe 的效果不好，所以直接选择了跳转。</p>
 <h2 id="设置APP信息"><a href="#设置APP信息" class="headerlink" title="设置APP信息"></a>设置APP信息</h2><p>打开 <strong>manifest.json</strong> 文件，在 <strong>应用信息</strong> 页填写应用名称、描述和版本号，以及云端获取 appid 号。</p>
