@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.berwyn.cn/"/>
-  <updated>2018-06-14T15:46:09.913Z</updated>
+  <updated>2018-07-01T17:07:46.022Z</updated>
   <id>https://www.berwyn.cn/</id>
   
   <author>
@@ -17,25 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>对于当前工作与处境上的思考</title>
-    <link href="https://www.berwyn.cn/2018/05/%E5%AF%B9%E4%BA%8E%E5%BD%93%E5%89%8D%E5%B7%A5%E4%BD%9C%E4%B8%8E%E5%A4%84%E5%A2%83%E4%B8%8A%E7%9A%84%E6%80%9D%E8%80%83.html"/>
-    <id>https://www.berwyn.cn/2018/05/对于当前工作与处境上的思考.html</id>
+    <title>如何零基础快速制作出一个.apk</title>
+    <link href="https://www.berwyn.cn/2018/05/%E5%A6%82%E4%BD%95%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%BF%AB%E9%80%9F%E5%88%B6%E4%BD%9C%E5%87%BA%E4%B8%80%E4%B8%AA.apk.html"/>
+    <id>https://www.berwyn.cn/2018/05/如何零基础快速制作出一个.apk.html</id>
     <published>2018-05-09T16:00:01.000Z</published>
-    <updated>2018-06-14T15:46:09.913Z</updated>
+    <updated>2018-07-01T17:07:46.022Z</updated>
     
-    <content type="html"><![CDATA[<p>最近发生了一些事情，佛性已经被消磨得差不多了，故有此思考。</p><p>关于工作上的反思，以及未来人生的规划。</p><a id="more"></a><h3 id="关于运营工作的思考"><a href="#关于运营工作的思考" class="headerlink" title="关于运营工作的思考"></a>关于运营工作的思考</h3><p>据近年的运营工作经验，越来越觉得运营是一个偏向于操控的工作。</p><p>不计方法与手段，去实现最终要达到的目的。</p>]]></content>
+    <content type="html"><![CDATA[<p>由于一些原因有这个需求，经过多次百度谷歌和不断地踩坑后，终于学会了一个骚操作。</p><p>利用 HBuilder 零基础快速制作出一个.apk，此类WebApp支持上传到部分应用商店。</p><a id="more"></a><h2 id="开始前的准备工作"><a href="#开始前的准备工作" class="headerlink" title="开始前的准备工作"></a>开始前的准备工作</h2><p>先到 HBuilder <a href="http://www.dcloud.io/" target="_blank" rel="noopener">官网</a> 下载软件，并进行安装。</p><h2 id="创建移动APP模板"><a href="#创建移动APP模板" class="headerlink" title="创建移动APP模板"></a>创建移动APP模板</h2><p>在运行 HBuilder 后，依次选择 <strong>文件</strong> -&gt; <strong>新建</strong> -&gt; <strong>移动APP</strong> ，默认选择 <strong>空模板</strong> 即可。</p><p><img src="http://www.berwyn.cn/images/article/CreatApp.jpg" alt=""></p><h2 id="写入-WebView-代码"><a href="#写入-WebView-代码" class="headerlink" title="写入 WebView 代码"></a>写入 WebView 代码</h2><p>打开 index.html 文件，写入以下代码。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;</span><br><span class="line">// 即将直接跳转至指定页</span><br><span class="line">window.location.href = &apos;http://www.yoursite.com/yoururl&apos;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p>其实就是个网页跳转代码，因为经测试 iframe 的效果不好，所以直接选择了跳转。</p><h2 id="设置APP信息"><a href="#设置APP信息" class="headerlink" title="设置APP信息"></a>设置APP信息</h2><p>打开 manifest.json 文件，在 <strong>应用信息</strong> 页填写应用名称、描述和版本号，以及云端获取 appid 号。</p><p><img src="http://www.berwyn.cn/images/article/AppInfo.jpg" alt=""></p><p>再点击 <strong>启动图片(splash)配置</strong> 页，按照要求上传启动图片，只需要上传 Android 端就行。</p><p><img src="http://www.berwyn.cn/images/article/Android.jpg" alt=""></p><h2 id="生成你的APP"><a href="#生成你的APP" class="headerlink" title="生成你的APP"></a>生成你的APP</h2><p>以上设置好后，在顶部工具栏依次点击 <strong>发行</strong> -&gt; <strong>发行为原生APP</strong> 开始打包生成。</p><p><img src="http://www.berwyn.cn/images/article/Push.jpg" alt=""></p><p>选择 <strong>查看APP打包状态</strong> 就可以查看打包进度，完成后就生成你的.apk，开始上传到各大应用商店吧。 </p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;最近发生了一些事情，佛性已经被消磨得差不多了，故有此思考。&lt;/p&gt;
-&lt;p&gt;关于工作上的反思，以及未来人生的规划。&lt;/p&gt;
+      &lt;p&gt;由于一些原因有这个需求，经过多次百度谷歌和不断地踩坑后，终于学会了一个骚操作。&lt;/p&gt;
+&lt;p&gt;利用 HBuilder 零基础快速制作出一个.apk，此类WebApp支持上传到部分应用商店。&lt;/p&gt;
     
     </summary>
     
-      <category term="自言自语" scheme="https://www.berwyn.cn/categories/%E8%87%AA%E8%A8%80%E8%87%AA%E8%AF%AD/"/>
+      <category term="分享创造" scheme="https://www.berwyn.cn/categories/%E5%88%86%E4%BA%AB%E5%88%9B%E9%80%A0/"/>
     
     
-      <category term="职场话题" scheme="https://www.berwyn.cn/tags/%E8%81%8C%E5%9C%BA%E8%AF%9D%E9%A2%98/"/>
+      <category term="应用软件" scheme="https://www.berwyn.cn/tags/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
@@ -44,9 +44,9 @@
     <link href="https://www.berwyn.cn/2018/04/%E7%99%BE%E5%BA%A6%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E7%BC%96%E7%A0%81%E6%8C%91%E6%88%98.html"/>
     <id>https://www.berwyn.cn/2018/04/百度前端技术学院编码挑战.html</id>
     <published>2018-04-22T16:54:51.000Z</published>
-    <updated>2018-05-10T09:55:24.341Z</updated>
+    <updated>2018-07-01T16:49:36.209Z</updated>
     
-    <content type="html"><![CDATA[<p>百度Web前端技术学院（Baidu Institute of Front-End Technology 简称IFE）是一个由百度EFE团队、百度人力资源部校园招聘组联合出品的前端培训组织。</p><p>借助百度大量优秀的前端工程师以及丰富的前端知识积累，更加高效、系统地学习Web前端技术。</p><a id="more"></a><p><img src="http://www.berwyn.cn/images/ife.jpg" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>百度Web前端技术学院（Baidu Institute of Front-End Technology 简称IFE）是一个由百度EFE团队、百度人力资源部校园招聘组联合出品的前端培训组织。</p><p>借助百度大量优秀的前端工程师以及丰富的前端知识积累，更加高效、系统地学习Web前端技术。</p><a id="more"></a><p><img src="http://www.berwyn.cn/images/article/ife.jpg" alt=""></p>]]></content>
     
     <summary type="html">
     
