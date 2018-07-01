@@ -63,26 +63,6 @@
   </entry>
   
   <entry>
-    <title>公益404页面</title>
-    <link href="https://www.berwyn.cn/2018/02/%E5%85%AC%E7%9B%8A404%E9%A1%B5%E9%9D%A2.html"/>
-    <id>https://www.berwyn.cn/2018/02/公益404页面.html</id>
-    <published>2018-02-26T11:47:30.000Z</published>
-    <updated>2018-07-01T15:48:57.821Z</updated>
-    
-    <content type="html"><![CDATA[<p>公益404页面是由腾讯公司员工志愿者自主发起的互联网公益活动。</p><p>网站只需要在自己的404页面中嵌入一段简单的代码，就能通过互联网来迅速传播失踪儿童信息，从而提高找回失踪儿童的概率。失踪儿童信息来自宝贝回家寻子网。</p><a id="more"></a>    <h2 id="公益-404-页面接入方法"><a href="#公益-404-页面接入方法" class="headerlink" title="公益 404 页面接入方法"></a>公益 404 页面接入方法</h2><p><strong>注意事项</strong>：</p><p>如果一个 404 页面的内容小于 512B，IE 会认为该 404 页面不够友好，在 IE 下将不会成功返回该 404 错误页面</p><p>复制以下 js 代码，嵌入到您的 404 页面，可以自适应移动设备。</p><p><strong>代码</strong>：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p><strong>效果展示</strong>：</p><p><img src="http://mat1.gtimg.com/www/404/banner_20150320.png" alt=""></p><p>同时我们提供 “<strong>返回首页</strong>” 这个超链接的可定制化能力，修改 “<strong>homePageUrl</strong>”、“<strong>homePageName</strong>” 两个参数即可。</p><p><strong>代码</strong>：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js&quot; charset=&quot;utf-8&quot; homePageUrl=&quot;http://yoursite.com/yourPage.html&quot; homePageName=&quot;回到我的主页&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p><strong>效果展示</strong>：</p><p><img src="http://mat1.gtimg.com/www/404/banner_02_20150320.jpg" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      公益404页面是由腾讯公司员工志愿者自主发起的互联网公益活动。网站只需要在自己的404页面中嵌入一段简单的代码，就能通过互联网来迅速传播失踪儿童信息，从而提高找回失踪儿童的概率。
-    
-    </summary>
-    
-      <category term="分享发现" scheme="https://www.berwyn.cn/categories/%E5%88%86%E4%BA%AB%E5%8F%91%E7%8E%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>这两年免费薅过的一些数字货币的羊毛</title>
     <link href="https://www.berwyn.cn/2018/01/%E8%BF%99%E4%B8%A4%E5%B9%B4%E5%85%8D%E8%B4%B9%E8%96%85%E8%BF%87%E7%9A%84%E4%B8%80%E4%BA%9B%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81%E7%9A%84%E7%BE%8A%E6%AF%9B.html"/>
     <id>https://www.berwyn.cn/2018/01/这两年免费薅过的一些虚拟货币的羊毛.html</id>
