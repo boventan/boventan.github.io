@@ -133,26 +133,22 @@
   </entry>
   
   <entry>
-    <title>从设计到上线，如何运维一个新的网站</title>
+    <title>让你的网站文字“抖”起来</title>
     <link href="https://www.berwyn.cn/2017/06/%E5%A6%82%E4%BD%95%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E8%BF%90%E7%BB%B4%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E7%BD%91%E7%AB%99.html"/>
     <id>https://www.berwyn.cn/2017/06/如何从零开始运维一个新的网站.html</id>
     <published>2017-06-15T11:01:38.000Z</published>
-    <updated>2018-06-22T14:42:57.270Z</updated>
+    <updated>2018-07-01T14:50:49.453Z</updated>
     
-    <content type="html"><![CDATA[<p>从大学至今陆续做了几个站，Wordpress、Discuz、PHPwind以及其他都有尝试过，总的来说还是够用的。</p><p>可惜的是，都没有坚持下来，主要是因为没有特色，难以存活。</p><p>不过现在讲的不是以前这些失败品，而是简单说下如何设计一个产品，进行推广与后续运维。</p><a id="more"></a><h3 id="一、设计与实现阶段"><a href="#一、设计与实现阶段" class="headerlink" title="一、设计与实现阶段"></a>一、设计与实现阶段</h3><p>1 先确定自身产品的定位，可以使用 Mindmanager 整理好思维导图，这样做产品原型时会事半功倍。</p><p>2 大概知道会做成什么样后，可以使用 Axure 或者 Sketch 设计产品原型，只需要个大概的 Demo ，方便交给技术人员做出来。如果精益求精做出互动效果来，那是更好的了。</p><p>3 做好原型后，非技术人员可以联系外包了。我是在 V2EX 发布了外包需求，简单沟通对比了一下就确定了开发人员。</p><p>付款一般采取 3-4-3 ，这个阶段比较考验人心，能不能靠谱看运气。所以要有保障的话，可以去 Shixian.com 等三方交易平台，至于猪八戒那种已经知名的大平台，<del>可能会聚集了一大批实习生工作的外包公司</del>。</p><p>4 交付定金后，自己购买域名和服务器，技术就会开工了，这段时期经常联系沟通，确保是自己要的最终效果。</p><h3 id="二、上线推广阶段"><a href="#二、上线推广阶段" class="headerlink" title="二、上线推广阶段"></a>二、上线推广阶段</h3><p>在设计与实现产品或者更早前，应该就要知道自己的产品面对的是什么样的人群，这样才能有针对性的进行推广，避免时间与精力上的浪费。</p><p><strong>上线推广可以分为两波</strong>：</p><p>1 主动推广：主动推广的意义在于，你在任何可以留信息的地方，发布产品上线信息，吸引关注。</p><p>手段包括不仅限于：QQ群、邮件、论坛、百度百科、百度知道、知乎、微博等，尽量选取高权重的大平台，而且要在有针对性的版块区域。</p><p>百度自家的产品：知道、经验、贴吧，权重是非常高的。其次就是简书与知乎，以及一些其他的大站。</p><p>2 被动推广: 这一块主要是网站自身基础，比如网站关键词、网站地图、站点内容等。</p><p>有内容会吸引游戏驻留与注册，以及提升搜索引擎收录量。</p><p>SEO则是精准获取用户，毕竟用户使用搜索引擎的时候，只能搜关键词。</p><h3 id="三、日常运维"><a href="#三、日常运维" class="headerlink" title="三、日常运维"></a>三、日常运维</h3><p>当开始有用户后，可以在其中选取协管人员，解放自己的工作量，从而有时间去做更重要的事情。</p><blockquote><p>YY的创始人李学凌讲过一组用户画像：<br>如果我有一片草地，我就在我的草地上养羊，所以我先要有第一只羊。如果这一只羊能够在我的草地上活下来，玩得很好，那么我的草地就是没问题的，我就可以引入更多的羊。<br>羊多了，你就会发现头羊才是关键的。为什么呢？因为一只头羊可以管一大堆羊，你就不用管了，那些小羊就不用管了，头羊都会管。只要有头羊，羊群就可以聚集。羊多了就会有狼，狼多了，我就把羊圈起来，然后向狼收费。<br>PS：收费之后呢，狼的需求是什么？狼以为收了费就能吃羊，实际上只能闻闻羊味，然后闻上瘾了持续付费！</p></blockquote><blockquote><p>总结就是：I.产品好，种子用户才活得下去；II.学会用流量变现；III.管理KOL。</p></blockquote><p>这个在亲身实践后，确实效果很不错，所有的反馈都被协管过滤了一遍，有更多的时间与精力去完善产品。</p><p>······</p><p>路漫漫其修远兮，吾将上下而求索。</p>]]></content>
+    <content type="html"><![CDATA[<p>一款挺火的软件，叫 “抖音”，发现它的标志有蓝红双色的叠加。</p><p>网站文字能否做出这个效果，甚至让文字像这个一样抖起来？答案当然是可以的。</p><h2 id="静态效果"><a href="#静态效果" class="headerlink" title="静态效果"></a>静态效果</h2><p>只需要给对应的选择器添加 text-shadow 属性即可完成。例如我让 body 里面的所有文字抖起来，就这样写：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="动态效果"><a href="#动态效果" class="headerlink" title="动态效果"></a>动态效果</h2><p>这种静态的效果我可不满足，想让它动起来，不需要任何 JavaScript，只需要 CSS3 动画即可完成。接下来我们就利用 CSS3 动画，让所有文字抖起来吧！</p><h2 id="添加动画"><a href="#添加动画" class="headerlink" title="添加动画"></a>添加动画</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@keyframes shake-it&#123;</span><br><span class="line">    0%&#123;</span><br><span class="line">        text-shadow: 0 0 rgba(0, 255, 255, .5), 0 0 rgba(255, 0, 0, .5);</span><br><span class="line">    &#125;</span><br><span class="line">    25%&#123;</span><br><span class="line">        text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);</span><br><span class="line">    &#125;</span><br><span class="line">    50%&#123;</span><br><span class="line">        text-shadow: -5px 0 rgba(0, 255, 255, .5), 3px 0 rgba(255, 0, 0, .5);</span><br><span class="line">    &#125;</span><br><span class="line">    100%&#123;</span><br><span class="line">        text-shadow: 3px 0 rgba(0, 255, 255, .5), 5px 0 rgba(255, 0, 0, .5);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="添加属性"><a href="#添加属性" class="headerlink" title="添加属性"></a>添加属性</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    animation: shake-it .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>试玩一下</p>]]></content>
     
     <summary type="html">
     
-      从大学至今陆续做了几个站，Wordpress、Discuz、PHPwind以及其他都有尝试过，简单说下如何设计一个产品，进行推广与后续运维。
+      最近听说了一款挺火的软件，叫 “抖音”，发现它的标志有蓝红双色的叠加。网站文字能否做出这个效果，甚至让文字像这个一样抖起来？答案当然是可以的。
     
     </summary>
     
-      <category term="产品运营" scheme="https://www.berwyn.cn/categories/%E4%BA%A7%E5%93%81%E8%BF%90%E8%90%A5/"/>
+      <category term="分享发现" scheme="https://www.berwyn.cn/categories/%E5%88%86%E4%BA%AB%E5%8F%91%E7%8E%B0/"/>
     
-    
-      <category term="产品设计" scheme="https://www.berwyn.cn/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="网站运营" scheme="https://www.berwyn.cn/tags/%E7%BD%91%E7%AB%99%E8%BF%90%E8%90%A5/"/>
     
   </entry>
   
