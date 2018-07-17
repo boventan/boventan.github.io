@@ -1,0 +1,46 @@
+<h1 id="angularLocalStorage"><a href="#angularLocalStorage" class="headerlink" title="angularLocalStorage "></a>angularLocalStorage <a href="https://travis-ci.org/agrublev/angularLocalStorage"><img src="https://travis-ci.org/agrublev/angularLocalStorage.png?branch=master" alt="Build Status"></a></h1><p>The simpliest localStorage module you will ever use. Allowing you to set, get, and <em>bind</em> variables.</p>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features:"></a>Features:</h2><ul>
+<li>Two way bind your $scope variable value to a localStorage key/pair which will be updated whenever the model is updated.</li>
+<li>You can directly store Objects, Arrays, Floats, Booleans, and Strings. No need to convert your javascript values from strings.</li>
+<li>Fallback to Angular <code>$cookies</code> if localStorage is not supported (REMEMBER to add <code>angular-cookies.min.js</code> script to your project or remove <code>&#39;ngCookies&#39;</code> from a dependency);</li>
+</ul>
+<h2 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use"></a>How to use</h2><ol>
+<li>Just add this module to your app as a dependency<br><code>var yourApp = angular.module(&#39;yourApp&#39;, [..., &#39;angularLocalStorage&#39;]</code></li>
+<li>Now inside your controllers simply pass the storage factory like this<br><code>yourApp.controller(&#39;yourController&#39;, function( $scope, storage){</code></li>
+<li><p>Using the <code>storage</code> factory</p>
+<pre><code>// binding it to a $scope.variable (minimal)
+storage.bind($scope,&apos;varName&apos;);
+// binding full
+storage.bind($scope,&apos;varName&apos;,{defaultValue: &apos;randomValue123&apos; ,storeName: &apos;customStoreKey&apos;});
+// the params are ($scope, varName, opts(optional))
+// $scope - pass a reference to whatever scope the variable resides in
+// varName - the variable name so for $scope.firstName enter &apos;firstName&apos;
+// opts - custom options like default value or unique store name
+//     Here are the available options you can set:
+//         * defaultValue: the default value
+//         * storeName: add a custom store key value instead of using the scope variable name
+
+// will constantly be updating $scope.viewType
+// to change the variable both locally in your controller and in localStorage just do
+$scope.viewType = &apos;ANYTHING&apos;;
+// that&apos;s it, it will be updated in localStorage
+
+// just storing something in localStorage with cookie backup for unsupported browsers
+storage.set(&apos;key&apos;,&apos;value&apos;);
+// getting that value
+storage.get(&apos;key&apos;);
+
+// clear all localStorage values
+storage.clearAll();
+</code></pre></li>
+</ol>
+<h2 id="Bower"><a href="#Bower" class="headerlink" title="Bower"></a>Bower</h2><p>This module is available as bower package, install it with this command:</p>
+<pre><code class="bash">bower install angularLocalStorage
+</code></pre>
+<p>or</p>
+<pre><code class="bash">bower install git://github.com/agrublev/angularLocalStorage.git
+</code></pre>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>For live example please checkout - <a href="http://plnkr.co/edit/Y1mrNVRkInCItqvZXtto?p=preview">http://plnkr.co/edit/Y1mrNVRkInCItqvZXtto?p=preview</a></p>
+<h2 id="Suggestions"><a href="#Suggestions" class="headerlink" title="Suggestions?"></a>Suggestions?</h2><p>Please add an issue with ideas, improvements, or bugs! Thanks!</p>
+<hr>
+<p>(c) 2013 MIT License</p>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>2017年长沙楼市红黑榜 - 安居客长沙</title> 
+	<meta name="keywords" content="安居客,Anjuke,长沙,Changsha,楼市,红黑榜"/>
+	<meta name="description" content="与2016年相比，2017年新房供销双向回落，在连续的调控下，房价涨幅已然收窄，走势较为平稳，对于购房者而言，今后置业选择将更多，无需过于恐慌入市，可理性购房。">
+
+<script type="text/javascript">  
+Number.prototype.NaN0=function(){return isNaN(this)?0:this;}  
+var bDrag=false, mouseOffset=null;  
+   
+function getMouseOffset(o,e){  
+  var _oPos=getPosition(o), _mPos=mouseCoords(e);  
+  return {x:_mPos.x-_oPos.x,y:_mPos.y-_oPos.y};  
+}  
+   
+function getPosition(o){  
+  var left=0, top=0;          
+  while(o.offsetParent){  
+    left+=o.offsetLeft+(o.currentStyle?(o.currentStyle.borderLeftWidth*1).NaN0():0);  
+    top +=o.offsetTop +(o.currentStyle?(o.currentStyle.borderTopWidth*1).NaN0():0);  
+    o=o.offsetParent;  
+  }  
+  left+=o.offsetLeft+(o.currentStyle?(o.currentStyle.borderLeftWidth*1).NaN0():0);  
+  top+=o.offsetTop+(o.currentStyle?(o.currentStyle.borderTopWidth*1).NaN0():0);  
+  return {x:left,y:top};  
+}  
+       
+function mouseCoords(e){  
+  if(e.pageX||e.pageY){  return {x:e.pageX,y:e.pageY};  }  
+  return {x:e.clientX+document.body.scrollLeft-document.body.clientLeft,y:e.clientY+document.body.scrollTop-document.body.clientTop};  
+}  
+   
+onload=function(){  
+  var oDrag=document.getElementById('aaa');  if(!oDrag) return;  
+  oDrag.onmousedown=function(e){  
+    bDrag=true;  
+      e=e||window.event;  
+    mouseOffset=getMouseOffset(this,e);    return false;   
+  }  
+   
+  oDrag.onmousemove=function(e){  
+      if(!bDrag)return;  
+    e=e||window.event;  
+    var _mPos = mouseCoords(e);  
+    oDrag.style.left=(_mPos.x - mouseOffset.x)+'px';  
+    oDrag.style.top= (_mPos.y - mouseOffset.y)+'px';  
+    return false;       
+  }  
+     
+  oDrag.onmouseup=function(){ bDrag = false;   mouseOffset=null;}   
+  var arm_img=document.getElementById('emergencyImg')  
+  cvi_map.add(arm_img,{areacolor: '#FFFF00',  bordercolor: '#60F',nofade:'true' });  
+  canvahtml=document.getElementById("emergencyImg_canvas").innerHTML;  
+} 
+</script> 
+</head>
+
+<body>
+<div style="_position:relative; text-align:center; margin:auto auto;">  
+
+	<img id="emergencyImg" usemap="#emergencyMap" src="hhbzt.jpg" border="0" width="100%" height="100%" orgWidth="100%" orgHeight="100%"> 
+	<map id="emergencyMap" name="emergencyMap"> 
+
+	<!-- 年度红榜楼盘 -->
+	<area shape="rect" coords="50,1850,600,2450" href="https://cs.fang.anjuke.com/loupan/400531.html">
+	<area shape="rect" coords="690,1850,1240,2450" href="https://cs.fang.anjuke.com/loupan/400531.html">
+
+	<area shape="rect" coords="50,2500,600,3100" href="https://cs.fang.anjuke.com/loupan/241110.html">
+	<area shape="rect" coords="690,2500,1240,3100" href="https://cs.fang.anjuke.com/loupan/251110.html">
+
+	<area shape="rect" coords="50,3150,600,3750" href="https://cs.fang.anjuke.com/loupan/297599.html">
+	<area shape="rect" coords="690,3150,1240,3750" href="https://cs.fang.anjuke.com/loupan/253016.html">
+
+	<area shape="rect" coords="50,3800,600,4400" href="https://cs.fang.anjuke.com/loupan/263929.html">
+	<area shape="rect" coords="690,3800,1240,4400" href="https://cs.fang.anjuke.com/loupan/411376.html">
+
+	<area shape="rect" coords="50,4450,600,5050" href="https://cs.fang.anjuke.com/loupan/410148.html">
+	<area shape="rect" coords="690,4450,1240,5050" href="https://cs.fang.anjuke.com/loupan/251253.html">
+
+	<!-- 年度黑榜楼盘 -->
+	<area shape="rect" coords="50,5500,600,6150" href="https://cs.fang.anjuke.com/loupan/246292.html">
+	<area shape="rect" coords="690,5500,1240,6150" href="https://cs.fang.anjuke.com/loupan/400872.html">
+
+	<area shape="rect" coords="50,6150,600,6800" href="https://cs.fang.anjuke.com/loupan/251951.html">
+	<area shape="rect" coords="690,6150,1240,6800" href="https://cs.fang.anjuke.com/loupan/252200.html">
+
+	<area shape="rect" coords="50,6800,600,7450" href="https://cs.fang.anjuke.com/loupan/249621.html">
+	<area shape="rect" coords="690,6800,1240,7450" href="https://cs.fang.anjuke.com/loupan/411351.html">
+
+	<area shape="rect" coords="50,7450,600,8100" href="https://cs.fang.anjuke.com/loupan/416115.html">
+	<area shape="rect" coords="690,7450,1240,8100" href="https://cs.fang.anjuke.com/loupan/238299.html">
+
+	<area shape="rect" coords="50,8100,600,8750" href="https://cs.fang.anjuke.com/loupan/412401.html">
+	<area shape="rect" coords="690,8100,1240,8750" href="https://cs.fang.anjuke.com/loupan/412119.html">
+
+</map></div>
+
+</body>
+
+<!-- Copyright © Anjuke.inc. Made by Boven, 01/10/2018. -->
+
+</html>
