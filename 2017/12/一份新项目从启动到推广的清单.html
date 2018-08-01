@@ -1,30 +1,124 @@
 <!DOCTYPE html>
-<html lang=zh>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="renderer" content="webkit">
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="format-detection" content="telephone=no,email=no,adress=no">
-  <!-- Color theme for statusbar -->
-  <meta name="theme-color" content="#000000" />
-  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
-  <meta http-equiv="window-target" content="_top" />
-  <!-- Google Adsense 自动广告 -->
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-8333251650895137",
-          enable_page_level_ads: true
-     });
-  </script>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('慢着，先对暗号！') !== ''){
+                alert('不如再仔细想一想？');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
   
-  
-  <title>一份新项目从启动到推广的清单 | 容声之所</title>
+
+
+
+
   <meta name="description" content="这份 Side Project 推广清单主要包含了从启动前的市场调研到项目发布后推广的各个方面以及注意事项。 这份清单免费而且开源，中文版翻译自英文原版 side-project-marketing 。">
 <meta name="keywords" content="推广运营">
 <meta property="og:type" content="article">
@@ -37,332 +131,306 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一份新项目从启动到推广的清单">
 <meta name="twitter:description" content="这份 Side Project 推广清单主要包含了从启动前的市场调研到项目发布后推广的各个方面以及注意事项。 这份清单免费而且开源，中文版翻译自英文原版 side-project-marketing 。">
-  <!-- Canonical links -->
-  <link rel="canonical" href="https://www.berwyn.cn/2017/12/一份新项目从启动到推广的清单.html">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="容声之所" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="https://www.berwyn.cn/2017/12/一份新项目从启动到推广的清单.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>一份新项目从启动到推广的清单 | 容声之所</title>
   
-    <link rel="alternate" href="/atom.xml" title="容声之所" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
-  
-  <!-- font-awesome CSS -->
-  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="/css/style.css">
-  
-    
-    
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
 </head>
 
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
-  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-  <div class="slimContent">
-    <div class="navbar-header">
-      
-      
-      <div class="profile-block text-center">
-        <a id="avatar" href="https://www.berwyn.cn" target="_blank">
-          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
-        </a>
-        <h2 id="name" class="hidden-xs hidden-sm">言崇文</h2>
-        <h3 id="title" class="hidden-xs hidden-sm hidden-md">越努力，越幸运！</h3>
-        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Changsha, China</small>
-      </div>
-      
-      <div class="search" id="search-form-wrap">
+  
+  
+    
+  
 
-    <form class="search-form sidebar-form">
-        <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="搜索" />
-            <span class="input-group-btn">
-                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
-            </span>
-        </div>
-    </form>
-    <div class="ins-search">
-  <div class="ins-search-mask"></div>
-  <div class="ins-search-container">
-    <div class="ins-input-wrapper">
-      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
-      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">容声之所</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <div class="ins-section-wrapper">
-      <div class="ins-section-container"></div>
-    </div>
+    
+      
+        <p class="site-subtitle">生而逐梦，不问归期。</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
 </div>
 
 
-</div>
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
-      <ul class="nav navbar-nav main-nav">
-        
-        
-        
-        <li class="menu-item menu-item-home">
-          <a href="/.">
-            
-            <i class="icon icon-home-fill"></i>
-            
-            <span class="menu-title">首页</span>
-          </a>
-        </li>
-        
-        
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives">
-            
-            <i class="icon icon-archives-fill"></i>
-            
-            <span class="menu-title">归档</span>
-          </a>
-        </li>
-        
-        
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories">
-            
-            <i class="icon icon-folder"></i>
-            
-            <span class="menu-title">分类</span>
-          </a>
-        </li>
-        
-        
-        
-        <li class="menu-item menu-item-links">
-          <a href="/links">
-            
-            <i class="icon icon-friendship"></i>
-            
-            <span class="menu-title">友链</span>
-          </a>
-        </li>
-        
-        
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about">
-            
-            <i class="icon icon-cup-fill"></i>
-            
-            <span class="menu-title">关于</span>
-          </a>
-        </li>
-        
-      </ul>
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
       
-	
-    <ul class="social-links">
-    	
-        <li><a href="https://github.com/boventan" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
-        <li><a href="http://weibo.com/tanboven" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
         
-        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
         
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+    <a href="/sitemap.xml" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />站点地图</a>
+  </li>
+
+      
+      
     </ul>
-
-    </nav>
-  </div>
-</header>
+  
 
   
-    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
-    
-      <div class="widget">
-    <h3 class="widget-title">公告</h3>
-    <div class="widget-body">
-        <div id="board">
-			<div class="content">
-                <p>我有一壶酒，足以慰风尘。<br>尽倾江海里，赠饮天下人。</p>
-            </div>
-            
-            <p><br>本站总访问量 <span id="busuanzi_value_site_pv">(⊃∀⊂)</span> 次，您是本站第 <span id="busuanzi_value_site_uv">(⊃∀⊂)</span> 位访客。</p>
-            
-        </div>
-    </div>
+
+  
+</nav>
+
+
+
+  
+
+
+
 </div>
+    </header>
 
     
-      
-  <div class="widget">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget-body tagcloud">
-      <a href="/tags/Github/" style="font-size: 13px;">Github</a> <a href="/tags/Jekyll/" style="font-size: 13px;">Jekyll</a> <a href="/tags/NPC/" style="font-size: 13px;">NPC</a> <a href="/tags/互动小说/" style="font-size: 13px;">互动小说</a> <a href="/tags/原创作品/" style="font-size: 13px;">原创作品</a> <a href="/tags/应用软件/" style="font-size: 13px;">应用软件</a> <a href="/tags/微信公众号/" style="font-size: 13px;">微信公众号</a> <a href="/tags/推广运营/" style="font-size: 13px;">推广运营</a> <a href="/tags/数字货币/" style="font-size: 13px;">数字货币</a> <a href="/tags/百度/" style="font-size: 13px;">百度</a> <a href="/tags/网络游戏/" style="font-size: 13px;">网络游戏</a> <a href="/tags/诗词歌赋/" style="font-size: 13px;">诗词歌赋</a>
-    </div>
-  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.berwyn.cn/2017/12/一份新项目从启动到推广的清单.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="言崇文">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/19233702?s=460&v=4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="容声之所">
+    </span>
 
     
-      
-  <div class="widget">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget-body">
-      <ul class="recent-post-list list-unstyled no-thumbnail">
+      <header class="post-header">
+
         
-          <li>
+        
+          <h1 class="post-title" itemprop="name headline">一份新项目从启动到推广的清单
+              
             
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/分享创造/">分享创造</a>
-              </p>
-              <p class="item-title">
-                <a href="/2018/05/如何零基础快速制作出一个.apk.html" class="title">如何零基础快速制作出一个.apk</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2018-05-09T16:00:01.000Z" itemprop="datePublished">2018-05-10</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
             
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/前端技术/">前端技术</a>
-              </p>
-              <p class="item-title">
-                <a href="/2018/04/百度前端技术学院编码挑战.html" class="title">百度前端技术学院编码挑战</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2018-04-22T16:54:51.000Z" itemprop="datePublished">2018-04-23</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
             
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/自言自语/">自言自语</a>
-              </p>
-              <p class="item-title">
-                <a href="/2018/01/这两年免费薅过的一些虚拟货币的羊毛.html" class="title">这两年免费薅过的一些数字货币的羊毛</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2018-01-14T06:04:24.000Z" itemprop="datePublished">2018-01-14</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
             
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/产品运营/">产品运营</a>
-              </p>
-              <p class="item-title">
-                <a href="/2017/12/一份新项目从启动到推广的清单.html" class="title">一份新项目从启动到推广的清单</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2017-12-15T08:37:58.000Z" itemprop="datePublished">2017-12-15</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
+
             
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/分享发现/">分享发现</a>
-              </p>
-              <p class="item-title">
-                <a href="/2017/09/愿有生之年，我能有一款游戏走向世界.html" class="title">愿有生之年，我能有一款游戏走向世界</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2017-09-21T08:17:45.000Z" itemprop="datePublished">2017-09-21</time>
-              </p>
-            </div>
-          </li>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-15 16:37:58" itemprop="dateCreated datePublished" datetime="2017-12-15T16:37:58+08:00">2017-12-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-15 17:53:19" itemprop="dateModified" datetime="2018-07-15T17:53:19+08:00">2018-07-15</time>
+              
+            
+          </span>
+
           
-      </ul>
-    </div>
-  </div>
-  
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/产品运营/" itemprop="url" rel="index"><span itemprop="name">产品运营</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
 
     
-  </div>
-</aside>
-
-  
-  
-<main class="main" role="main">
-  <div class="content">
-  <article id="post-一份新项目从启动到推广的清单" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-    <div class="article-header">
-      
-        
-  
-    <h1 class="article-title" itemprop="name">
-      一份新项目从启动到推广的清单
-    </h1>
-  
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-      <div class="article-meta">
-        <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2017/12/一份新项目从启动到推广的清单.html" class="article-date">
-	  <time datetime="2017-12-15T08:37:58.000Z" itemprop="datePublished">2017-12-15</time>
-	</a>
-</span>
-        
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/产品运营/">产品运营</a>
-  </span>
+      
 
-        
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/推广运营/">推广运营</a>
-  </span>
-
-
-        
-	<span class="article-read hidden-xs">
-	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
-	    <span id="busuanzi_value_page_pv">(⊃∀⊂)</span>
-			<span id="busuanzi_value_page_pv"></span>
-		</span>
-	</span>
-
-
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2017/12/一份新项目从启动到推广的清单.html#comments" class="article-comment-link">评论</a></span>
-        
-	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2,829(字)</span>
-	
-	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 10(分)</span>
-	
-
-      </div>
-    </div>
-	<!-- Google Adsense -->
-	<center><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- C1oud Web -->
-	<ins class="adsbygoogle"
-		style="display:block"
-		data-ad-client="ca-pub-8333251650895137"
-		data-ad-slot="9274901601"
-		data-ad-format="auto"></ins>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-	</script></center><br>
-    <div class="article-entry markdown-body" itemprop="articleBody">
       
         <p>这份 Side Project 推广清单主要包含了从启动前的市场调研到项目发布后推广的各个方面以及注意事项。</p>
 <p>这份清单免费而且开源，中文版翻译自英文原版 <a href="https://www.sideprojectchecklist.com/marketing-checklist/" target="_blank" rel="noopener">side-project-marketing</a> 。</p>
@@ -654,218 +722,451 @@
 
       
     </div>
-	<center><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- C1oud Web -->
-	<ins class="adsbygoogle"
-		style="display:block"
-		data-ad-client="ca-pub-8333251650895137"
-		data-ad-slot="9274901601"
-		data-ad-format="auto"></ins>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-	</script></center>	
-    <div class="article-footer">
-      <blockquote class="mt-2x">
-  <ul class="post-copyright list-unstyled">
-    
-    <li class="post-copyright-link hidden-xs">
-      <strong>本文链接：</strong>
-      <a href="https://www.berwyn.cn/2017/12/一份新项目从启动到推广的清单.html" title="一份新项目从启动到推广的清单" target="_blank" rel="external">https://www.berwyn.cn/2017/12/一份新项目从启动到推广的清单.html</a>
-    </li>
-    
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议，转载请注明出处！
-    </li>
-  </ul>
-</blockquote>
 
+    
 
-<div class="panel panel-default panel-badger">
-  <div class="panel-body">
-    <figure class="media">
-      <div class="media-left">
-        <a href="https://www.berwyn.cn" target="_blank" class="img-burn thumb-sm visible-lg">
-          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
-        </a>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>言崇文</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.berwyn.cn/2017/12/一份新项目从启动到推广的清单.html" title="一份新项目从启动到推广的清单">https://www.berwyn.cn/2017/12/一份新项目从启动到推广的清单.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
       </div>
-      <div class="media-body">
-        <h3 class="media-heading"><a href="https://www.berwyn.cn" target="_blank"><span class="text-dark">言崇文</span><small class="ml-1x">越努力，越幸运！</small></a></h3>
-        <div>文能提笔戏萝莉，武能嬉笑斗众基。</div>
-      </div>
-    </figure>
-  </div>
-</div>
-
-
-    </div>
-  </article>
-  
     
-  <section id="comments">
-  	
-       
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zMzIwNS85NzYy">
-  <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
-</div>
+
+    <footer class="post-footer">
       
-    
-  </section>
+        <div class="post-tags">
+          
+            <a href="/tags/推广运营/" rel="tag"><i class="fa fa-tag"></i> 推广运营</a>
+          
+        </div>
+      
 
+      
+      
+      
 
-  
-</div>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/愿有生之年，我能有一款游戏走向世界.html" rel="next" title="愿有生之年，我能有一款游戏走向世界">
+                <i class="fa fa-chevron-left"></i> 愿有生之年，我能有一款游戏走向世界
+              </a>
+            
+          </div>
 
-  <nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-  
-  <ul class="pager pull-left">
-    
-    <li class="prev">
-      <a href="/2018/01/这两年免费薅过的一些虚拟货币的羊毛.html" title="这两年免费薅过的一些数字货币的羊毛"><i class="icon icon-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;上一篇</a>
-    </li>
-    
-    
-    <li class="next">
-      <a href="/2017/09/愿有生之年，我能有一款游戏走向世界.html" title="愿有生之年，我能有一款游戏走向世界">下一篇&nbsp;&nbsp;<i class="icon icon-angle-right" aria-hidden="true"></i></a>
-    </li>
-    
-  </ul>
-  
-  
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning hidden-xs" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
-  
-  
-  <div class="bar-right">
-    
-    <div class="share-component" data-sites="qq,wechat,weibo" data-mobile-sites="qq,wechat,weibo"></div>
-    
-    
-  </div>
-  </div>
-</nav>
-  
-<!-- Modal -->
-<div class="modal modal-center modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <div class="modal-body">
-        <div class="donate-box">
-          <div class="donate-tit">
-            <p>感谢您的支持，我会继续努力的!</p>
-          </div>
-          <div class="donate-payimg">
-            <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
-          </div>
-          <p class="text-muted mv">扫码打赏，你说多少就多少</p>
-          <div class="donate-payselect">
-            <div class="pay_item checked" data-id="alipay" data-src="/images/donate/alipayimg.png">
-              <div class="radio">
-                <input type="radio" name="payment" id="input-alipay" value="alipay" checked>
-                <label class="pay_logo clickable" for="input-alipay"><img src="/images/donate/alipay.jpg" alt="支付宝" /></label>
-              </div>
-            </div>
-            <div class="pay_item" data-id="weipay" data-src="/images/donate/weipayimg.png">
-              <div class="radio">
-                <input type="radio" name="payment" id="input-weipay" value="weipay">
-                <label class="pay_logo clickable" for="input-weipay"><img src="/images/donate/weipay.jpg" alt="微信支付" /></label>
-              </div>
-            </div>
-          </div>
-          <div class="text-grey">
-            <p>扫一扫，即可进行扫码打赏哦</p>
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/这两年免费薅过的一些虚拟货币的羊毛.html" rel="prev" title="这两年免费薅过的一些数字货币的羊毛">
+                这两年免费薅过的一些数字货币的羊毛 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://avatars3.githubusercontent.com/u/19233702?s=460&v=4"
+                alt="言崇文" />
+            
+              <p class="site-author-name" itemprop="name">言崇文</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#产品发布前"><span class="nav-number">1.</span> <span class="nav-text">产品发布前</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#竞争格局分析"><span class="nav-number">1.1.</span> <span class="nav-text">竞争格局分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#用户分析"><span class="nav-number">1.2.</span> <span class="nav-text">用户分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布前的准备工作"><span class="nav-number">1.3.</span> <span class="nav-text">发布前的准备工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#着陆页"><span class="nav-number">1.4.</span> <span class="nav-text">着陆页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Email-Marketing"><span class="nav-number">1.5.</span> <span class="nav-text">Email Marketing</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#博客搭建"><span class="nav-number">1.6.</span> <span class="nav-text">博客搭建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#社交媒体"><span class="nav-number">1.7.</span> <span class="nav-text">社交媒体</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#产品发布后"><span class="nav-number">2.</span> <span class="nav-text">产品发布后</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#获取用户"><span class="nav-number">2.1.</span> <span class="nav-text">获取用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#免费的推广渠道"><span class="nav-number">2.2.</span> <span class="nav-text">免费的推广渠道</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#付费的推广渠道"><span class="nav-number">2.3.</span> <span class="nav-text">付费的推广渠道</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#周期性的推广任务"><span class="nav-number">3.</span> <span class="nav-text">周期性的推广任务</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#写博客"><span class="nav-number">3.1.</span> <span class="nav-text">写博客</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Email"><span class="nav-number">3.2.</span> <span class="nav-text">Email</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#社交网络"><span class="nav-number">3.3.</span> <span class="nav-text">社交网络</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#公共关系"><span class="nav-number">3.4.</span> <span class="nav-text">公共关系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他的网站"><span class="nav-number">3.5.</span> <span class="nav-text">其他的网站</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优化"><span class="nav-number">4.</span> <span class="nav-text">优化</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
       </div>
-    </div>
-  </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">言崇文</span>
+
+  
+
+  
 </div>
 
 
 
-</main>
 
-  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
-	
-	
-    <ul class="social-links">
-    	
-        <li><a href="https://github.com/boventan" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
-        
-        <li><a href="http://weibo.com/tanboven" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
-        
-    </ul>
 
-    <div class="copyright">
-    	
-        &copy; 2018 言崇文
+
+
+
+
+
+
         
-        <div class="publishby">
-        <!--	<`%= __('copyright.theme_by')  <a href="https://github.com/cofess" target="_blank"> cofess </a><`%= __('copyright.base_on')  <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>. -->
-        </div>
-    </div>
-</footer>
-  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-<script>
-window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
-</script>
-<script src="/js/plugin.min.js"></script>
-<script src="/js/application.js"></script>
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
   
-    
-    
-    
-        <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(未命名)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
-    
-    
-    
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
         
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
+      </div>
+    </footer>
 
     
-    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
         
+      </div>
     
-<script defer type="text/javascript">
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
 
-    if (typeof LivereTower === 'function') { return; }
+    
+	
+    
 
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
+    
+  </div>
 
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
-    
-    
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
