@@ -111,14 +111,14 @@
   <meta name="description" content="记录一些有意思的JS代码片段，拿来即可用。">
 <meta name="keywords" content="Javascrip,代码片段">
 <meta property="og:type" content="article">
-<meta property="og:title" content="网站折腾实战之JS代码片段">
-<meta property="og:url" content="https://www.berwyn.cn/2018/08/网站折腾实战之JS代码片段.html">
+<meta property="og:title" content="网站折腾实战之代码片段">
+<meta property="og:url" content="https://www.berwyn.cn/2018/08/网站折腾实战之代码片段.html">
 <meta property="og:site_name" content="容声之所">
 <meta property="og:description" content="记录一些有意思的JS代码片段，拿来即可用。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-11T04:52:19.139Z">
+<meta property="og:updated_time" content="2018-08-14T17:39:03.746Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网站折腾实战之JS代码片段">
+<meta name="twitter:title" content="网站折腾实战之代码片段">
 <meta name="twitter:description" content="记录一些有意思的JS代码片段，拿来即可用。">
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="https://www.berwyn.cn/2018/08/网站折腾实战之JS代码片段.html"/>
+  <link rel="canonical" href="https://www.berwyn.cn/2018/08/网站折腾实战之代码片段.html"/>
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>网站折腾实战之JS代码片段 | 容声之所</title>
+  <title>网站折腾实战之代码片段 | 容声之所</title>
   
 
 
@@ -311,7 +311,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.berwyn.cn/2018/08/网站折腾实战之JS代码片段.html">
+    <link itemprop="mainEntityOfPage" href="https://www.berwyn.cn/2018/08/网站折腾实战之代码片段.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="言崇文">
@@ -328,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">网站折腾实战之JS代码片段
+          <h1 class="post-title" itemprop="name headline">网站折腾实战之代码片段
               
             
           </h1>
@@ -408,7 +408,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">9.9k</span>&nbsp;字
+                <span title="本文字数">10k</span>&nbsp;字
               
 
               
@@ -422,7 +422,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">20 分钟</span>
+                <span title="阅读时长">21 分钟</span>
               
             </div>
           
@@ -462,6 +462,7 @@
 <h4 id="第八款：标题打字特效"><a href="#第八款：标题打字特效" class="headerlink" title="第八款：标题打字特效"></a>第八款：标题打字特效</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--标题打字特效引入--&gt;</span><br><span class="line">&lt;p id =&quot;typetitle&quot;&gt;可能我在也不会遇到第二这样的她&lt;/p&gt;</span><br><span class="line"> &lt;script&gt;</span><br><span class="line">            var typingbefore = document.getElementById(&quot;typetitle&quot;).innerText;//获取标题内容</span><br><span class="line">            document.getElementById(&apos;typetitle&apos;).innerText = &quot;&quot;;//将标题内容赋值为空</span><br><span class="line">            var i = 0;</span><br><span class="line">            function typetitle()&#123;</span><br><span class="line">                var typingafter = document.getElementById(&apos;typetitle&apos;);//获取标题元素</span><br><span class="line">                if(i &lt;= typingbefore.length)&#123;</span><br><span class="line">                    typingafter.innerHTML = typingbefore.slice(0,i++)+&apos;|&apos;;//将标题内容通过slice()方法返回</span><br><span class="line">                    setTimeout(&apos;typetitle()&apos;,100);//每100毫秒执行一次</span><br><span class="line">                &#125;else&#123;</span><br><span class="line">                    typingafter.innerHTML = typingbefore;//当标题内容全部返回后，去掉最后的‘|’</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            typetitle();</span><br><span class="line">            &lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="第九款：文字抖动效果"><a href="#第九款：文字抖动效果" class="headerlink" title="第九款：文字抖动效果"></a>第九款：文字抖动效果</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;doudong.css&quot;&gt;</span><br><span class="line">&lt;p id=&quot;shaky&quot; class=&quot;shaky c&quot;&gt;十一♥&lt;/p&gt;</span><br><span class="line">&lt;span class=&quot;shaky&quot; &gt;&lt;p id=&quot;shaky&quot;&gt;(●&apos;◡&apos;●)ﾉ&lt;/p&gt;&lt;/span&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="第十款：社会主义价值观"><a href="#第十款：社会主义价值观" class="headerlink" title="第十款：社会主义价值观"></a>第十款：社会主义价值观</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt; </span><br><span class="line">/* 鼠标特效 */</span><br><span class="line">var a_idx = 0; </span><br><span class="line">jQuery(document).ready(function($) &#123; </span><br><span class="line">    $(&quot;body&quot;).click(function(e) &#123; </span><br><span class="line">        var a = new Array(&quot;富强&quot;, &quot;民主&quot;, &quot;文明&quot;, &quot;和谐&quot;, &quot;自由&quot;, &quot;平等&quot;, &quot;公正&quot; ,&quot;法治&quot;, &quot;爱国&quot;, &quot;敬业&quot;, &quot;诚信&quot;, &quot;友善&quot;); </span><br><span class="line">        var $i = $(&quot;&lt;span/&gt;&quot;).text(a[a_idx]); </span><br><span class="line">        a_idx = (a_idx + 1) % a.length; </span><br><span class="line">        var x = e.pageX, </span><br><span class="line">        y = e.pageY; </span><br><span class="line">        $i.css(&#123; </span><br><span class="line">            &quot;z-index&quot;: 999999999999999999999999999999999999999999999999999999999999999999999, </span><br><span class="line">            &quot;top&quot;: y - 20, </span><br><span class="line">            &quot;left&quot;: x, </span><br><span class="line">            &quot;position&quot;: &quot;absolute&quot;, </span><br><span class="line">            &quot;font-weight&quot;: &quot;bold&quot;, </span><br><span class="line">            &quot;color&quot;: &quot; #e8425c&quot;</span><br><span class="line">        &#125;); </span><br><span class="line">        $(&quot;body&quot;).append($i); </span><br><span class="line">        $i.animate(&#123; </span><br><span class="line">            &quot;top&quot;: y - 200, </span><br><span class="line">            &quot;opacity&quot;: 0 </span><br><span class="line">        &#125;, </span><br><span class="line">        1500, </span><br><span class="line">        function() &#123; </span><br><span class="line">            $i.remove(); </span><br><span class="line">        &#125;); </span><br><span class="line">    &#125;); </span><br><span class="line">&#125;); </span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第十一款：自定义滚动条"><a href="#第十一款：自定义滚动条" class="headerlink" title="第十一款：自定义滚动条"></a>第十一款：自定义滚动条</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt; </span><br><span class="line">::-webkit-scrollbar &#123;width: 3px;height: 3px;&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;&#125;</span><br><span class="line">::-webkit-scrollbar-thumb &#123;background-color: #cccccc;background-image: -webkit-linear-gradient(24deg,  rgba(255, 255, 255, .3) 100%,  transparent 100%,  transparent);-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -511,7 +512,7 @@
     <strong>本文作者： </strong>言崇文</li>
   <li class="post-copyright-link">
     <strong>原文链接：</strong>
-    <a href="https://www.berwyn.cn/2018/08/网站折腾实战之JS代码片段.html" title="网站折腾实战之JS代码片段">https://www.berwyn.cn/2018/08/网站折腾实战之JS代码片段.html</a>
+    <a href="https://www.berwyn.cn/2018/08/网站折腾实战之代码片段.html" title="网站折腾实战之代码片段">https://www.berwyn.cn/2018/08/网站折腾实战之代码片段.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处！</li>
@@ -777,7 +778,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一款：给网站添加点击特效-心"><span class="nav-number">1.</span> <span class="nav-text">第一款：给网站添加点击特效 心</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二款：网站焦点监控"><span class="nav-number">2.</span> <span class="nav-text">第二款：网站焦点监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三款：闪烁字体"><span class="nav-number">3.</span> <span class="nav-text">第三款：闪烁字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第四款：网站运营时间统计"><span class="nav-number">4.</span> <span class="nav-text">第四款：网站运营时间统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第五款：复制弹窗提示"><span class="nav-number">5.</span> <span class="nav-text">第五款：复制弹窗提示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第六款：打字特效"><span class="nav-number">6.</span> <span class="nav-text">第六款：打字特效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第七款：页面滚动顶部进度条加载效果代码"><span class="nav-number">7.</span> <span class="nav-text">第七款：页面滚动顶部进度条加载效果代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第八款：标题打字特效"><span class="nav-number">8.</span> <span class="nav-text">第八款：标题打字特效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第九款：文字抖动效果"><span class="nav-number">9.</span> <span class="nav-text">第九款：文字抖动效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十款：社会主义价值观"><span class="nav-number">10.</span> <span class="nav-text">第十款：社会主义价值观</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一款：给网站添加点击特效-心"><span class="nav-number">1.</span> <span class="nav-text">第一款：给网站添加点击特效 心</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二款：网站焦点监控"><span class="nav-number">2.</span> <span class="nav-text">第二款：网站焦点监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三款：闪烁字体"><span class="nav-number">3.</span> <span class="nav-text">第三款：闪烁字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第四款：网站运营时间统计"><span class="nav-number">4.</span> <span class="nav-text">第四款：网站运营时间统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第五款：复制弹窗提示"><span class="nav-number">5.</span> <span class="nav-text">第五款：复制弹窗提示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第六款：打字特效"><span class="nav-number">6.</span> <span class="nav-text">第六款：打字特效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第七款：页面滚动顶部进度条加载效果代码"><span class="nav-number">7.</span> <span class="nav-text">第七款：页面滚动顶部进度条加载效果代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第八款：标题打字特效"><span class="nav-number">8.</span> <span class="nav-text">第八款：标题打字特效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第九款：文字抖动效果"><span class="nav-number">9.</span> <span class="nav-text">第九款：文字抖动效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十款：社会主义价值观"><span class="nav-number">10.</span> <span class="nav-text">第十款：社会主义价值观</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十一款：自定义滚动条"><span class="nav-number">11.</span> <span class="nav-text">第十一款：自定义滚动条</span></a></li></ol></div>
             
 
           </div>
@@ -811,7 +812,7 @@
     
       <span class="post-meta-item-text">本站总字数：</span>
     
-    <span title="本站总字数">41k</span>&nbsp;字
+    <span title="本站总字数">42k</span>&nbsp;字
   
 
   
@@ -822,7 +823,7 @@
     
       <span class="post-meta-item-text">本站总阅读时长 &asymp;</span>
     
-    <span title="本站总阅读时长">1:23</span>
+    <span title="本站总阅读时长">1:24</span>
   
 </div>
 
