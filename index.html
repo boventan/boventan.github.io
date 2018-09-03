@@ -444,14 +444,7 @@
 
       
         
-          <h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>使用 <code>JavaScript</code> 实现拖拽的步骤：</p>
-<ul>
-<li>让元素捕获事件（<code>mousedown</code>, <code>mousemove</code> &amp; <code>mouseup</code>）</li>
-<li>单击并不释放，触发 <code>mousedown</code>，标记开始拖拽，并获取元素和鼠标的位置</li>
-<li>拖动鼠标，触发 <code>mousemove</code>，不断的获取鼠标的位置，并通过计算重新确定元素的位置</li>
-<li>释放师表，触发 <code>mouseup</code>，结束拖拽，确定元素位置并更新</li>
-</ul>
-<p>注意：被拖拽的元素必须是相对父元素定位，或者是绝对定位。</p>
+          <p>使用的简单的 <code>JavaScript</code> 代码实现元素的拖拽，但并没有对兼容性问题全面考虑，也没有对性能优化，有不必要的事件触发。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/09/使用-JavaScript-实现简单的拖拽.html#more" rel="contents">
