@@ -1,12 +1,122 @@
 <!DOCTYPE html>
-<html lang=zh>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head>
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="这是一篇需要密码访问的文章。">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+<!-- Google Auto Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6201060679208865",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/favicon.png?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="这是一篇需要密码访问的文章。">
 <meta name="keywords" content="百度,前端技术,学习笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="百度前端技术学院编码挑战">
@@ -18,238 +128,952 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="百度前端技术学院编码挑战">
 <meta name="twitter:description" content="这是一篇需要密码访问的文章。">
-    
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.png">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
-          
-        
-    
-    <!-- title -->
-    <title>百度前端技术学院编码挑战</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- persian styles -->
-    
-      <link rel="stylesheet" href="/css/rtl.css">
-    
-    <!-- rss -->
-    
-    
-    <style type="text/css"> 
-      ::-webkit-scrollbar {width: 1px;height: 1px;}
-      ::-webkit-scrollbar-track {-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;}
-      ::-webkit-scrollbar-thumb {background-color: #cccccc;background-image: -webkit-linear-gradient(24deg,  rgba(255, 255, 255, .3) 100%,  transparent 100%,  transparent);-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;}
-</style>
-</head>
-
-<body class="max-width mx-auto px3 ltr">
-    
-      <div id="header-post">
-  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-         
-          <li><a href="/">home</a></li>
-         
-          <li><a href="/about/">about</a></li>
-         
-          <li><a href="/archives/">articles</a></li>
-         
-          <li><a href="/projects_url">projects</a></li>
-        
-      </ul>
-    </span>
-    <br/>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" href="/2018/05/如何零基础快速制作出一个.apk.html"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" href="/2018/01/这两年免费薅过的一些虚拟货币的羊毛.html"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">post.desktop.previous</span>
-      <span id="i-next" class="info" style="display:none;">post.desktop.next</span>
-      <span id="i-top" class="info" style="display:none;">post.desktop.back_to_top</span>
-      <span id="i-share" class="info" style="display:none;">post.desktop.share</span>
-    </span>
-    <br/>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&text=百度前端技术学院编码挑战"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&is_video=false&description=百度前端技术学院编码挑战"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=百度前端技术学院编码挑战&body=Check out this article: https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&name=百度前端技术学院编码挑战&description=这是一篇需要密码访问的文章。&lt;/br&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-    <div id="toc">
-      
-    </div>
-  </span>
-</div>
-
-    
-    <div class="content index py4">
-        
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle" itemprop="name headline">
-        百度前端技术学院编码挑战
-    </h1>
 
 
 
-    <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">容声之所</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2018-04-22T16:54:51.000Z" itemprop="datePublished">2018-04-23</time>
-        
-      
-    </div>
+  <link rel="alternate" href="/atom.xml" title="容声之所" type="application/atom+xml" />
 
 
-      
-    <div class="article-category">
-        <i class="fas fa-archive"></i>
-        <a class="category-link" href="/categories/学习笔记/">学习笔记</a>
-    </div>
 
 
-      
-    <div class="article-tag">
-        <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/前端技术/">前端技术</a>, <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>, <a class="tag-link" href="/tags/百度/">百度</a>
-    </div>
+  <link rel="canonical" href="https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html"/>
 
 
-    </div>
-  </header>
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>百度前端技术学院编码挑战 | 容声之所</title>
   
 
-  <div class="content" itemprop="articleBody">
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <div id="security"> <div class="input-container"> <input type="password" class="form-control" id="pass" placeholder=" 且慢，来者止步，请先对一下暗号！ " /> <label for="pass"> 且慢，来者止步，请先对一下暗号！ </label> <div class="bottom-line"></div> </div> </div> <div id="encrypt-blog" style="display:none"> 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 </div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
-  </div>
-</article>
 
 
 
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
 
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/">home</a></li>
-         
-          <li><a href="/about/">about</a></li>
-         
-          <li><a href="/archives/">articles</a></li>
-         
-          <li><a href="/projects_url">projects</a></li>
-        
-      </ul>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">容声之所</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
+    
+      
+        <p class="site-subtitle">巷陌隐士，市井小人。</p>
+      
+    
+  </div>
 
-    <div id="toc-footer" style="display: none">
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">15</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">5</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">25</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="言崇文">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/19233702?s=460&v=4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="容声之所">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">百度前端技术学院编码挑战
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-04-23 00:54:51" itemprop="dateCreated datePublished" datetime="2018-04-23T00:54:51+08:00">2018-04-23</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+		  
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">5.6k</span>&nbsp;字
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">11 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <div id="security"> <div class="input-container"> <input type="password" class="form-control" id="pass" placeholder=" 且慢，来者止步，请先对一下暗号！ " /> <label for="pass"> 且慢，来者止步，请先对一下暗号！ </label> <div class="bottom-line"></div> </div> </div> <div id="encrypt-blog" style="display:none"> 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 </div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
     </div>
 
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&text=百度前端技术学院编码挑战"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&is_video=false&description=百度前端技术学院编码挑战"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=百度前端技术学院编码挑战&body=Check out this article: https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&name=百度前端技术学院编码挑战&description=这是一篇需要密码访问的文章。&lt;/br&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-</ul>
+    
 
-    </div>
+    
+    
+    
 
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> post.mobile.menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> post.mobile.toc</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> post.mobile.share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> post.mobile.back_to_top</a>
-    </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/donate/weipayimg.png" alt="言崇文 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/donate/alipayimg.png" alt="言崇文 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
 
   </div>
 </div>
 
-        
-        <footer id="footer">
-  <div class="footer-left">
-    footer.copyright &copy; 2019 言崇文
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>言崇文</li>
+  <li class="post-copyright-link">
+    <strong>原文链接：</strong>
+    <a href="https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html" title="百度前端技术学院编码挑战">https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/百度/" rel="tag"><i class="fa fa-tag"></i> 百度</a>
+          
+            <a href="/tags/前端技术/" rel="tag"><i class="fa fa-tag"></i> 前端技术</a>
+          
+            <a href="/tags/学习笔记/" rel="tag"><i class="fa fa-tag"></i> 学习笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/这两年免费薅过的一些虚拟货币的羊毛.html" rel="next" title="这两年免费薅过的一些数字货币的羊毛">
+                <i class="fa fa-chevron-left"></i> 这两年免费薅过的一些数字货币的羊毛
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/如何零基础快速制作出一个.apk.html" rel="prev" title="如何零基础快速制作出一个.apk">
+                如何零基础快速制作出一个.apk <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-          <li><a href="/">home</a></li>
-         
-          <li><a href="/about/">about</a></li>
-         
-          <li><a href="/archives/">articles</a></li>
-         
-          <li><a href="/projects_url">projects</a></li>
-        
-      </ul>
-    </nav>
+  
+  
+  
+  </article>
+
+
   </div>
-</footer>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://avatars3.githubusercontent.com/u/19233702?s=460&v=4"
+                alt="言崇文" />
+            
+              <p class="site-author-name" itemprop="name">言崇文</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.berwyn.cn" target="_blank" title="容身之所">容身之所</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:goddoges@gmail.com" target="_blank" title="Mail2me">Mail2me</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.lugoo.com.cn" title="麓谷社区 - 弗兰人在策么子" target="_blank">麓谷社区 - 弗兰人在策么子</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
 
     </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heartbeat"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">言崇文</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">本站总字数：</span>
+    
+    <span title="本站总字数">55k</span>&nbsp;字
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">本站总阅读时长 &asymp;</span>
+    
+    <span title="本站总阅读时长">1:50</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+  <span style="display:none">Hosted by &<a href="https://pages.github.com">GitHub</a> & <a href="https://pages.coding.me">Coding</a></span>
+ 
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    您是第 <span class="site-uv" title="总访客量">
+      <!-- <i class="fa fa-user"></i> -->
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 位访客，
+    </span>
+  
+
+  
+    累计被访问 <span class="site-pv" title="总访问量">
+      <!-- <i class="fa fa-eye"></i> -->
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次。
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #fff;
+      background-image: linear-gradient(#fcfcfc, #fff);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 </body>
 </html>
-<!-- styles -->
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
-
-<!-- jquery -->
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
-<script src="/js/main.js"></script>
-<!-- search -->
-
-<!-- Google Analytics -->
-
-<!-- Baidu Analytics -->
-
-<!-- Disqus Comments -->
-
-

@@ -1,12 +1,122 @@
 <!DOCTYPE html>
-<html lang=zh>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head>
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="记录一些有意思的JS代码片段，拿来即可用。">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+<!-- Google Auto Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6201060679208865",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/favicon.png?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="记录一些有意思的JS代码片段，拿来即可用。">
 <meta name="keywords" content="JavaScrip,CSS,代码片段">
 <meta property="og:type" content="article">
 <meta property="og:title" content="瞎折腾之好玩的代码片段汇总">
@@ -18,146 +128,330 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="瞎折腾之好玩的代码片段汇总">
 <meta name="twitter:description" content="记录一些有意思的JS代码片段，拿来即可用。">
-    
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.png">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
-          
-        
-    
-    <!-- title -->
-    <title>瞎折腾之好玩的代码片段汇总</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- persian styles -->
-    
-      <link rel="stylesheet" href="/css/rtl.css">
-    
-    <!-- rss -->
-    
-    
-    <style type="text/css"> 
-      ::-webkit-scrollbar {width: 1px;height: 1px;}
-      ::-webkit-scrollbar-track {-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;}
-      ::-webkit-scrollbar-thumb {background-color: #cccccc;background-image: -webkit-linear-gradient(24deg,  rgba(255, 255, 255, .3) 100%,  transparent 100%,  transparent);-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;}
-</style>
-</head>
-
-<body class="max-width mx-auto px3 ltr">
-    
-      <div id="header-post">
-  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-         
-          <li><a href="/">home</a></li>
-         
-          <li><a href="/about/">about</a></li>
-         
-          <li><a href="/archives/">articles</a></li>
-         
-          <li><a href="/projects_url">projects</a></li>
-        
-      </ul>
-    </span>
-    <br/>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" href="/2018/09/使用-JavaScript-实现简单的拖拽.html"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" href="/2018/07/腾讯传1998-2016：中国互联网公司进化论.html"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">post.desktop.previous</span>
-      <span id="i-next" class="info" style="display:none;">post.desktop.next</span>
-      <span id="i-top" class="info" style="display:none;">post.desktop.back_to_top</span>
-      <span id="i-share" class="info" style="display:none;">post.desktop.share</span>
-    </span>
-    <br/>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&text=瞎折腾之好玩的代码片段汇总"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&is_video=false&description=瞎折腾之好玩的代码片段汇总"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=瞎折腾之好玩的代码片段汇总&body=Check out this article: https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&name=瞎折腾之好玩的代码片段汇总&description=&lt;p&gt;记录一些有意思的JS代码片段，拿来即可用。&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-    <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一款：给网站添加点击特效-心"><span class="toc-number">1.</span> <span class="toc-text">第一款：给网站添加点击特效 心</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第二款：网站焦点监控"><span class="toc-number">2.</span> <span class="toc-text">第二款：网站焦点监控</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第三款：闪烁字体"><span class="toc-number">3.</span> <span class="toc-text">第三款：闪烁字体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第四款：网站运营时间统计"><span class="toc-number">4.</span> <span class="toc-text">第四款：网站运营时间统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第五款：复制弹窗提示"><span class="toc-number">5.</span> <span class="toc-text">第五款：复制弹窗提示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第六款：打字特效"><span class="toc-number">6.</span> <span class="toc-text">第六款：打字特效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第七款：页面滚动顶部进度条加载效果代码"><span class="toc-number">7.</span> <span class="toc-text">第七款：页面滚动顶部进度条加载效果代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第八款：标题打字特效"><span class="toc-number">8.</span> <span class="toc-text">第八款：标题打字特效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第九款：文字抖动效果"><span class="toc-number">9.</span> <span class="toc-text">第九款：文字抖动效果</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第十款：社会主义价值观"><span class="toc-number">10.</span> <span class="toc-text">第十款：社会主义价值观</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第十一款：自定义滚动条"><span class="toc-number">11.</span> <span class="toc-text">第十一款：自定义滚动条</span></a></li></ol>
-    </div>
-  </span>
-</div>
-
-    
-    <div class="content index py4">
-        
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle" itemprop="name headline">
-        瞎折腾之好玩的代码片段汇总
-    </h1>
 
 
 
-    <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">容声之所</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2018-08-05T06:59:36.000Z" itemprop="datePublished">2018-08-05</time>
-        
-      
-    </div>
+  <link rel="alternate" href="/atom.xml" title="容声之所" type="application/atom+xml" />
 
 
-      
-    <div class="article-category">
-        <i class="fas fa-archive"></i>
-        <a class="category-link" href="/categories/分享发现/">分享发现</a>
-    </div>
 
 
-      
-    <div class="article-tag">
-        <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/CSS/">CSS</a>, <a class="tag-link" href="/tags/JavaScrip/">JavaScrip</a>, <a class="tag-link" href="/tags/代码片段/">代码片段</a>
-    </div>
+  <link rel="canonical" href="https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html"/>
 
 
-    </div>
-  </header>
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>瞎折腾之好玩的代码片段汇总 | 容声之所</title>
   
 
-  <div class="content" itemprop="articleBody">
-    <p>记录一些有意思的JS代码片段，拿来即可用。</p>
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">容声之所</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">巷陌隐士，市井小人。</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">15</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">5</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">25</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="言崇文">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/19233702?s=460&v=4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="容声之所">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">瞎折腾之好玩的代码片段汇总
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-08-05 14:59:36" itemprop="dateCreated datePublished" datetime="2018-08-05T14:59:36+08:00">2018-08-05</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/分享发现/" itemprop="url" rel="index"><span itemprop="name">分享发现</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+		  
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">10k</span>&nbsp;字
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">21 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>记录一些有意思的JS代码片段，拿来即可用。</p>
 <a id="more"></a>
 <h4 id="第一款：给网站添加点击特效-心"><a href="#第一款：给网站添加点击特效-心" class="headerlink" title="第一款：给网站添加点击特效 心"></a>第一款：给网站添加点击特效 心</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">!function (e, t, a) &#123;</span><br><span class="line">function r() &#123;</span><br><span class="line">for (var e = 0; e &lt; s.length; e++) s[e].alpha &lt;= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = &quot;left:&quot; + s[e].x + &quot;px;top:&quot; + s[e].y + &quot;px;opacity:&quot; + s[e].alpha + &quot;;transform:scale(&quot; + s[e].scale + &quot;,&quot; + s[e].scale + &quot;) rotate(45deg);background:&quot; + s[e].color + &quot;;z-index:99999&quot;);</span><br><span class="line">requestAnimationFrame(r)</span><br><span class="line">&#125;</span><br><span class="line">function n() &#123;</span><br><span class="line">var t = &quot;function&quot; == typeof e.onclick &amp;&amp; e.onclick;</span><br><span class="line">e.onclick = function (e) &#123;</span><br><span class="line">t &amp;&amp; t(), o(e)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">function o(e) &#123;</span><br><span class="line">var a = t.createElement(&quot;div&quot;);</span><br><span class="line">a.className = &quot;heart&quot;, s.push(&#123;</span><br><span class="line">el: a,</span><br><span class="line">x: e.clientX - 5,</span><br><span class="line">y: e.clientY - 5,</span><br><span class="line">scale: 1,</span><br><span class="line">alpha: 1,</span><br><span class="line">color: c()</span><br><span class="line">&#125;), t.body.appendChild(a)</span><br><span class="line">&#125;</span><br><span class="line">function i(e) &#123;</span><br><span class="line">var a = t.createElement(&quot;style&quot;);</span><br><span class="line">a.type = &quot;text/css&quot;;</span><br><span class="line">try &#123;</span><br><span class="line">a.appendChild(t.createTextNode(e))</span><br><span class="line">&#125; catch (t) &#123;</span><br><span class="line">a.styleSheet.cssText = e</span><br><span class="line">&#125;</span><br><span class="line">t.getElementsByTagName(&quot;head&quot;)[0].appendChild(a)</span><br><span class="line">&#125;</span><br><span class="line">function c() &#123;</span><br><span class="line">return &quot;rgb(&quot; + ~~(255 * Math.random()) + &quot;,&quot; + ~~(255 * Math.random()) + &quot;,&quot; + ~~(255 * Math.random()) + &quot;)&quot;</span><br><span class="line">&#125;</span><br><span class="line">var s = [];</span><br><span class="line">e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) &#123;</span><br><span class="line">setTimeout(e, 1e3 / 60)</span><br><span class="line">&#125;, i(&quot;.heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: &apos;&apos;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;&quot;), n(), r()</span><br><span class="line">&#125;(window, document);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="第二款：网站焦点监控"><a href="#第二款：网站焦点监控" class="headerlink" title="第二款：网站焦点监控"></a>第二款：网站焦点监控</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var OriginTitile = document.title,</span><br><span class="line">titleTime;</span><br><span class="line">document.addEventListener(&quot;visibilitychange&quot;,</span><br><span class="line">function() &#123;</span><br><span class="line">    if (document.hidden) &#123;</span><br><span class="line">        $;</span><br><span class="line">        document.title = &quot;哎呀，404 Not Found！&quot;;</span><br><span class="line">        clearTimeout(titleTime)</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        $;</span><br><span class="line">        document.title = &quot;咦，好像又好了？&quot; + OriginTitile;</span><br><span class="line">        titleTime = setTimeout(function() &#123;</span><br><span class="line">            document.title = OriginTitile</span><br><span class="line">        &#125;,</span><br><span class="line">        2000)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
@@ -178,98 +472,653 @@
 <h4 id="第九款：文字抖动效果"><a href="#第九款：文字抖动效果" class="headerlink" title="第九款：文字抖动效果"></a>第九款：文字抖动效果</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;doudong.css&quot;&gt;</span><br><span class="line">&lt;p id=&quot;shaky&quot; class=&quot;shaky c&quot;&gt;十一♥&lt;/p&gt;</span><br><span class="line">&lt;span class=&quot;shaky&quot; &gt;&lt;p id=&quot;shaky&quot;&gt;(●&apos;◡&apos;●)ﾉ&lt;/p&gt;&lt;/span&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="第十款：社会主义价值观"><a href="#第十款：社会主义价值观" class="headerlink" title="第十款：社会主义价值观"></a>第十款：社会主义价值观</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt; </span><br><span class="line">/* 鼠标特效 */</span><br><span class="line">var a_idx = 0; </span><br><span class="line">jQuery(document).ready(function($) &#123; </span><br><span class="line">    $(&quot;body&quot;).click(function(e) &#123; </span><br><span class="line">        var a = new Array(&quot;富强&quot;, &quot;民主&quot;, &quot;文明&quot;, &quot;和谐&quot;, &quot;自由&quot;, &quot;平等&quot;, &quot;公正&quot; ,&quot;法治&quot;, &quot;爱国&quot;, &quot;敬业&quot;, &quot;诚信&quot;, &quot;友善&quot;); </span><br><span class="line">        var $i = $(&quot;&lt;span/&gt;&quot;).text(a[a_idx]); </span><br><span class="line">        a_idx = (a_idx + 1) % a.length; </span><br><span class="line">        var x = e.pageX, </span><br><span class="line">        y = e.pageY; </span><br><span class="line">        $i.css(&#123; </span><br><span class="line">            &quot;z-index&quot;: 999999999999999999999999999999999999999999999999999999999999999999999, </span><br><span class="line">            &quot;top&quot;: y - 20, </span><br><span class="line">            &quot;left&quot;: x, </span><br><span class="line">            &quot;position&quot;: &quot;absolute&quot;, </span><br><span class="line">            &quot;font-weight&quot;: &quot;bold&quot;, </span><br><span class="line">            &quot;color&quot;: &quot; #e8425c&quot;</span><br><span class="line">        &#125;); </span><br><span class="line">        $(&quot;body&quot;).append($i); </span><br><span class="line">        $i.animate(&#123; </span><br><span class="line">            &quot;top&quot;: y - 200, </span><br><span class="line">            &quot;opacity&quot;: 0 </span><br><span class="line">        &#125;, </span><br><span class="line">        1500, </span><br><span class="line">        function() &#123; </span><br><span class="line">            $i.remove(); </span><br><span class="line">        &#125;); </span><br><span class="line">    &#125;); </span><br><span class="line">&#125;); </span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="第十一款：自定义滚动条"><a href="#第十一款：自定义滚动条" class="headerlink" title="第十一款：自定义滚动条"></a>第十一款：自定义滚动条</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt; </span><br><span class="line">::-webkit-scrollbar &#123;width: 3px;height: 3px;&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;&#125;</span><br><span class="line">::-webkit-scrollbar-thumb &#123;background-color: #cccccc;background-image: -webkit-linear-gradient(24deg,  rgba(255, 255, 255, .3) 100%,  transparent 100%,  transparent);-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-  </div>
-</article>
-
-
-
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/">home</a></li>
-         
-          <li><a href="/about/">about</a></li>
-         
-          <li><a href="/archives/">articles</a></li>
-         
-          <li><a href="/projects_url">projects</a></li>
-        
-      </ul>
+      
     </div>
 
-    <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一款：给网站添加点击特效-心"><span class="toc-number">1.</span> <span class="toc-text">第一款：给网站添加点击特效 心</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第二款：网站焦点监控"><span class="toc-number">2.</span> <span class="toc-text">第二款：网站焦点监控</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第三款：闪烁字体"><span class="toc-number">3.</span> <span class="toc-text">第三款：闪烁字体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第四款：网站运营时间统计"><span class="toc-number">4.</span> <span class="toc-text">第四款：网站运营时间统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第五款：复制弹窗提示"><span class="toc-number">5.</span> <span class="toc-text">第五款：复制弹窗提示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第六款：打字特效"><span class="toc-number">6.</span> <span class="toc-text">第六款：打字特效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第七款：页面滚动顶部进度条加载效果代码"><span class="toc-number">7.</span> <span class="toc-text">第七款：页面滚动顶部进度条加载效果代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第八款：标题打字特效"><span class="toc-number">8.</span> <span class="toc-text">第八款：标题打字特效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第九款：文字抖动效果"><span class="toc-number">9.</span> <span class="toc-text">第九款：文字抖动效果</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第十款：社会主义价值观"><span class="toc-number">10.</span> <span class="toc-text">第十款：社会主义价值观</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第十一款：自定义滚动条"><span class="toc-number">11.</span> <span class="toc-text">第十一款：自定义滚动条</span></a></li></ol>
-    </div>
+    
 
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&text=瞎折腾之好玩的代码片段汇总"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&is_video=false&description=瞎折腾之好玩的代码片段汇总"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=瞎折腾之好玩的代码片段汇总&body=Check out this article: https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&name=瞎折腾之好玩的代码片段汇总&description=&lt;p&gt;记录一些有意思的JS代码片段，拿来即可用。&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-</ul>
+    
+    
+    
 
-    </div>
+    
 
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> post.mobile.menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> post.mobile.toc</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> post.mobile.share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> post.mobile.back_to_top</a>
-    </div>
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/donate/weipayimg.png" alt="言崇文 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/donate/alipayimg.png" alt="言崇文 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
 
   </div>
 </div>
 
-        
-        <footer id="footer">
-  <div class="footer-left">
-    footer.copyright &copy; 2019 言崇文
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>言崇文</li>
+  <li class="post-copyright-link">
+    <strong>原文链接：</strong>
+    <a href="https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html" title="瞎折腾之好玩的代码片段汇总">https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScrip/" rel="tag"><i class="fa fa-tag"></i> JavaScrip</a>
+          
+            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
+          
+            <a href="/tags/代码片段/" rel="tag"><i class="fa fa-tag"></i> 代码片段</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/腾讯传1998-2016：中国互联网公司进化论.html" rel="next" title="腾讯传1998-2016：中国互联网公司进化论">
+                <i class="fa fa-chevron-left"></i> 腾讯传1998-2016：中国互联网公司进化论
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/使用-JavaScript-实现简单的拖拽.html" rel="prev" title="使用 JavaScript 实现简单的拖拽">
+                使用 JavaScript 实现简单的拖拽 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-          <li><a href="/">home</a></li>
-         
-          <li><a href="/about/">about</a></li>
-         
-          <li><a href="/archives/">articles</a></li>
-         
-          <li><a href="/projects_url">projects</a></li>
-        
-      </ul>
-    </nav>
+  
+  
+  
+  </article>
+
+
   </div>
-</footer>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://avatars3.githubusercontent.com/u/19233702?s=460&v=4"
+                alt="言崇文" />
+            
+              <p class="site-author-name" itemprop="name">言崇文</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.berwyn.cn" target="_blank" title="容身之所">容身之所</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:goddoges@gmail.com" target="_blank" title="Mail2me">Mail2me</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.lugoo.com.cn" title="麓谷社区 - 弗兰人在策么子" target="_blank">麓谷社区 - 弗兰人在策么子</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一款：给网站添加点击特效-心"><span class="nav-number">1.</span> <span class="nav-text">第一款：给网站添加点击特效 心</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二款：网站焦点监控"><span class="nav-number">2.</span> <span class="nav-text">第二款：网站焦点监控</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三款：闪烁字体"><span class="nav-number">3.</span> <span class="nav-text">第三款：闪烁字体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第四款：网站运营时间统计"><span class="nav-number">4.</span> <span class="nav-text">第四款：网站运营时间统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第五款：复制弹窗提示"><span class="nav-number">5.</span> <span class="nav-text">第五款：复制弹窗提示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第六款：打字特效"><span class="nav-number">6.</span> <span class="nav-text">第六款：打字特效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第七款：页面滚动顶部进度条加载效果代码"><span class="nav-number">7.</span> <span class="nav-text">第七款：页面滚动顶部进度条加载效果代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第八款：标题打字特效"><span class="nav-number">8.</span> <span class="nav-text">第八款：标题打字特效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第九款：文字抖动效果"><span class="nav-number">9.</span> <span class="nav-text">第九款：文字抖动效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十款：社会主义价值观"><span class="nav-number">10.</span> <span class="nav-text">第十款：社会主义价值观</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第十一款：自定义滚动条"><span class="nav-number">11.</span> <span class="nav-text">第十一款：自定义滚动条</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
 
     </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heartbeat"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">言崇文</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">本站总字数：</span>
+    
+    <span title="本站总字数">55k</span>&nbsp;字
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">本站总阅读时长 &asymp;</span>
+    
+    <span title="本站总阅读时长">1:50</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+  <span style="display:none">Hosted by &<a href="https://pages.github.com">GitHub</a> & <a href="https://pages.coding.me">Coding</a></span>
+ 
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    您是第 <span class="site-uv" title="总访客量">
+      <!-- <i class="fa fa-user"></i> -->
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 位访客，
+    </span>
+  
+
+  
+    累计被访问 <span class="site-pv" title="总访问量">
+      <!-- <i class="fa fa-eye"></i> -->
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次。
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #fff;
+      background-image: linear-gradient(#fcfcfc, #fff);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 </body>
 </html>
-<!-- styles -->
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
-
-<!-- jquery -->
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
-<script src="/js/main.js"></script>
-<!-- search -->
-
-<!-- Google Analytics -->
-
-<!-- Baidu Analytics -->
-
-<!-- Disqus Comments -->
-
-
