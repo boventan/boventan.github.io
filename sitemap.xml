@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.berwyn.cn/2019/01/%E6%9D%A5%E8%87%AA2018%E7%9A%84%E5%B9%B4%E5%BA%A6%E7%AE%80%E6%8A%A5.html</loc>
+    
+    <lastmod>2019-01-18T18:20:20.056Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.berwyn.cn/2015/12/%E6%9B%BE%E7%BB%8F%E7%9A%84%E5%8E%9F%E5%88%9B%E8%AF%97%E6%AD%8C%E8%AF%8D%E4%BD%9C%E5%93%81%E5%90%88%E9%9B%86.html</loc>
+    
+    <lastmod>2019-01-18T16:47:02.847Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.berwyn.cn/2017/06/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8Jekyll-now%E5%9C%A8Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html</loc>
+    
+    <lastmod>2019-01-18T16:46:44.549Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.berwyn.cn/2018/07/%E8%85%BE%E8%AE%AF%E4%BC%A01998-2016%EF%BC%9A%E4%B8%AD%E5%9B%BD%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E8%BF%9B%E5%8C%96%E8%AE%BA.html</loc>
+    
+    <lastmod>2019-01-18T16:46:36.567Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.berwyn.cn/2018/05/%E5%A6%82%E4%BD%95%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%BF%AB%E9%80%9F%E5%88%B6%E4%BD%9C%E5%87%BA%E4%B8%80%E4%B8%AA.apk.html</loc>
     
     <lastmod>2019-01-18T16:42:58.405Z</lastmod>
@@ -12,13 +40,6 @@
     <loc>https://blog.berwyn.cn/about/index.html</loc>
     
     <lastmod>2019-01-18T16:39:40.722Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.berwyn.cn/2019/01/%E6%9D%A5%E8%87%AA2018%E7%9A%84%E5%B9%B4%E5%BA%A6%E7%AE%80%E6%8A%A5.html</loc>
-    
-    <lastmod>2019-01-18T16:38:03.182Z</lastmod>
     
   </url>
   
@@ -40,13 +61,6 @@
     <loc>https://blog.berwyn.cn/2017/06/%E4%B8%80%E6%AC%A1%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B9%9D%E8%BF%9E%E8%B7%AA%E4%B9%8B%E5%90%8E%E7%9A%84%E6%80%9D%E8%80%83.html</loc>
     
     <lastmod>2018-09-11T14:59:22.229Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.berwyn.cn/2017/06/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8Jekyll-now%E5%9C%A8Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html</loc>
-    
-    <lastmod>2018-09-11T14:59:13.632Z</lastmod>
     
   </url>
   
@@ -86,20 +100,6 @@
   </url>
   
   <url>
-    <loc>https://blog.berwyn.cn/2015/12/%E6%9B%BE%E7%BB%8F%E7%9A%84%E5%8E%9F%E5%88%9B%E8%AF%97%E6%AD%8C%E8%AF%8D%E4%BD%9C%E5%93%81%E5%90%88%E9%9B%86.html</loc>
-    
-    <lastmod>2018-08-04T20:03:22.815Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.berwyn.cn/2016/08/%E4%B8%80%E4%B8%AANPC%E7%9A%84%E6%AD%A3%E5%B8%B8%E6%AD%BB%E4%BA%A1%E6%8A%A5%E5%91%8A.html</loc>
-    
-    <lastmod>2018-08-04T20:03:22.769Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.berwyn.cn/2017/12/%E4%B8%80%E4%BB%BD%E6%96%B0%E9%A1%B9%E7%9B%AE%E4%BB%8E%E5%90%AF%E5%8A%A8%E5%88%B0%E6%8E%A8%E5%B9%BF%E7%9A%84%E6%B8%85%E5%8D%95.html</loc>
     
     <lastmod>2018-08-04T20:03:22.769Z</lastmod>
@@ -107,7 +107,7 @@
   </url>
   
   <url>
-    <loc>https://blog.berwyn.cn/2018/07/%E8%85%BE%E8%AE%AF%E4%BC%A01998-2016%EF%BC%9A%E4%B8%AD%E5%9B%BD%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E8%BF%9B%E5%8C%96%E8%AE%BA.html</loc>
+    <loc>https://blog.berwyn.cn/2016/08/%E4%B8%80%E4%B8%AANPC%E7%9A%84%E6%AD%A3%E5%B8%B8%E6%AD%BB%E4%BA%A1%E6%8A%A5%E5%91%8A.html</loc>
     
     <lastmod>2018-08-04T20:03:22.769Z</lastmod>
     
