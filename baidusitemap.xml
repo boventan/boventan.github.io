@@ -4,6 +4,27 @@
 
     
   <url>
+    <loc>https://blog.berwyn.cn/2017/12/%E4%B8%80%E4%BB%BD%E6%96%B0%E9%A1%B9%E7%9B%AE%E4%BB%8E%E5%90%AF%E5%8A%A8%E5%88%B0%E6%8E%A8%E5%B9%BF%E7%9A%84%E6%B8%85%E5%8D%95.html</loc>
+    <lastmod>2019-01-18T18:35:44.819Z</lastmod>
+    <data>
+        <display>
+        <title>一份新项目从启动到推广的清单</title>
+        <pubTime>2017-12-15T08:37:58.000Z</pubTime>
+        
+        <tag>推广运营</tag>
+         
+         
+           
+             
+              <breadCrumb title="产品运营" url="https://blog.berwyn.cn/categories/%E4%BA%A7%E5%93%81%E8%BF%90%E8%90%A5/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>https://blog.berwyn.cn/2019/01/%E6%9D%A5%E8%87%AA2018%E7%9A%84%E5%B9%B4%E5%BA%A6%E7%AE%80%E6%8A%A5.html</loc>
     <lastmod>2019-01-18T18:27:11.623Z</lastmod>
     <data>
@@ -68,28 +89,6 @@
 
     
   <url>
-    <loc>https://blog.berwyn.cn/2018/07/%E8%85%BE%E8%AE%AF%E4%BC%A01998-2016%EF%BC%9A%E4%B8%AD%E5%9B%BD%E4%BA%92%E8%81%94%E7%BD%91%E5%85%AC%E5%8F%B8%E8%BF%9B%E5%8C%96%E8%AE%BA.html</loc>
-    <lastmod>2019-01-18T16:46:36.567Z</lastmod>
-    <data>
-        <display>
-        <title>腾讯传1998-2016：中国互联网公司进化论</title>
-        <pubTime>2018-07-20T14:53:42.000Z</pubTime>
-        
-        <tag>腾讯</tag>
-         
-        <tag>互联网</tag>
-         
-         
-           
-             
-              <breadCrumb title="自由创造" url="https://blog.berwyn.cn/categories/%E8%87%AA%E7%94%B1%E5%88%9B%E9%80%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://blog.berwyn.cn/2018/05/%E5%A6%82%E4%BD%95%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%BF%AB%E9%80%9F%E5%88%B6%E4%BD%9C%E5%87%BA%E4%B8%80%E4%B8%AA.apk.html</loc>
     <lastmod>2019-01-18T16:42:58.405Z</lastmod>
     <data>
@@ -108,7 +107,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>https://blog.berwyn.cn/2015/09/%E6%96%B0%E7%A4%BE%E5%9B%A2%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF.html</loc>
@@ -157,9 +155,9 @@
         <title>一次王者荣耀九连跪之后的思考</title>
         <pubTime>2017-06-16T02:59:19.000Z</pubTime>
         
-        <tag>王者荣耀</tag>
-         
         <tag>网络游戏</tag>
+         
+        <tag>王者荣耀</tag>
          
          
            
@@ -194,28 +192,6 @@
 
     
   <url>
-    <loc>https://blog.berwyn.cn/2018/09/%E4%BD%BF%E7%94%A8-JavaScript-%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E6%8B%96%E6%8B%BD.html</loc>
-    <lastmod>2018-09-03T16:43:08.934Z</lastmod>
-    <data>
-        <display>
-        <title>使用 JavaScript 实现简单的拖拽</title>
-        <pubTime>2018-09-02T03:06:14.000Z</pubTime>
-        
-        <tag>网络游戏</tag>
-         
-        <tag>JavaScrip</tag>
-         
-         
-           
-             
-              <breadCrumb title="分享发现" url="https://blog.berwyn.cn/categories/%E5%88%86%E4%BA%AB%E5%8F%91%E7%8E%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://blog.berwyn.cn/2018/08/%E7%9E%8E%E6%8A%98%E8%85%BE%E4%B9%8B%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E6%B1%87%E6%80%BB.html</loc>
     <lastmod>2018-09-02T03:08:53.166Z</lastmod>
     <data>
@@ -223,9 +199,9 @@
         <title>瞎折腾之好玩的代码片段汇总</title>
         <pubTime>2018-08-05T06:59:36.000Z</pubTime>
         
-        <tag>JavaScrip</tag>
-         
         <tag>CSS</tag>
+         
+        <tag>JavaScrip</tag>
          
         <tag>代码片段</tag>
          
@@ -233,30 +209,6 @@
            
              
               <breadCrumb title="分享发现" url="https://blog.berwyn.cn/categories/%E5%88%86%E4%BA%AB%E5%8F%91%E7%8E%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://blog.berwyn.cn/2018/04/%E7%99%BE%E5%BA%A6%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E7%BC%96%E7%A0%81%E6%8C%91%E6%88%98.html</loc>
-    <lastmod>2018-08-11T04:30:29.685Z</lastmod>
-    <data>
-        <display>
-        <title>百度前端技术学院编码挑战</title>
-        <pubTime>2018-04-22T16:54:51.000Z</pubTime>
-        
-        <tag>百度</tag>
-         
-        <tag>前端技术</tag>
-         
-        <tag>学习笔记</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习笔记" url="https://blog.berwyn.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
           
         </display>
     </data>
@@ -284,26 +236,6 @@
 
     
   <url>
-    <loc>https://blog.berwyn.cn/2017/12/%E4%B8%80%E4%BB%BD%E6%96%B0%E9%A1%B9%E7%9B%AE%E4%BB%8E%E5%90%AF%E5%8A%A8%E5%88%B0%E6%8E%A8%E5%B9%BF%E7%9A%84%E6%B8%85%E5%8D%95.html</loc>
-    <lastmod>2018-08-04T20:03:22.769Z</lastmod>
-    <data>
-        <display>
-        <title>一份新项目从启动到推广的清单</title>
-        <pubTime>2017-12-15T08:37:58.000Z</pubTime>
-        
-        <tag>推广运营</tag>
-         
-         
-           
-             
-              <breadCrumb title="产品运营" url="https://blog.berwyn.cn/categories/%E4%BA%A7%E5%93%81%E8%BF%90%E8%90%A5/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://blog.berwyn.cn/2016/08/%E4%B8%80%E4%B8%AANPC%E7%9A%84%E6%AD%A3%E5%B8%B8%E6%AD%BB%E4%BA%A1%E6%8A%A5%E5%91%8A.html</loc>
     <lastmod>2018-08-04T20:03:22.769Z</lastmod>
     <data>
@@ -311,9 +243,9 @@
         <title>一个NPC的正常死亡报告</title>
         <pubTime>2016-08-05T16:54:51.000Z</pubTime>
         
-        <tag>网络游戏</tag>
-         
         <tag>NPC</tag>
+         
+        <tag>网络游戏</tag>
          
          
            
