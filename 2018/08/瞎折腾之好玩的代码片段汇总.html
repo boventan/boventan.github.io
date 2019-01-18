@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="记录一些有意思的JS代码片段，拿来即可用。">
+<meta name="keywords" content="JavaScrip,CSS,代码片段">
+<meta property="og:type" content="article">
+<meta property="og:title" content="瞎折腾之好玩的代码片段汇总">
+<meta property="og:url" content="https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html">
+<meta property="og:site_name" content="容声之所">
+<meta property="og:description" content="记录一些有意思的JS代码片段，拿来即可用。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-02T03:08:53.166Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="瞎折腾之好玩的代码片段汇总">
+<meta name="twitter:description" content="记录一些有意思的JS代码片段，拿来即可用。">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.png">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+          
+        
+    
+    <!-- title -->
+    <title>瞎折腾之好玩的代码片段汇总</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+    <style type="text/css"> 
+      ::-webkit-scrollbar {width: 1px;height: 1px;}
+      ::-webkit-scrollbar-track {-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;}
+      ::-webkit-scrollbar-thumb {background-color: #cccccc;background-image: -webkit-linear-gradient(24deg,  rgba(255, 255, 255, .3) 100%,  transparent 100%,  transparent);-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;}
+</style>
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2018/09/使用-JavaScript-实现简单的拖拽.html"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2018/07/腾讯传1998-2016：中国互联网公司进化论.html"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&text=瞎折腾之好玩的代码片段汇总"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&is_video=false&description=瞎折腾之好玩的代码片段汇总"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=瞎折腾之好玩的代码片段汇总&body=Check out this article: https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&name=瞎折腾之好玩的代码片段汇总&description=&lt;p&gt;记录一些有意思的JS代码片段，拿来即可用。&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一款：给网站添加点击特效-心"><span class="toc-number">1.</span> <span class="toc-text">第一款：给网站添加点击特效 心</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第二款：网站焦点监控"><span class="toc-number">2.</span> <span class="toc-text">第二款：网站焦点监控</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第三款：闪烁字体"><span class="toc-number">3.</span> <span class="toc-text">第三款：闪烁字体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第四款：网站运营时间统计"><span class="toc-number">4.</span> <span class="toc-text">第四款：网站运营时间统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第五款：复制弹窗提示"><span class="toc-number">5.</span> <span class="toc-text">第五款：复制弹窗提示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第六款：打字特效"><span class="toc-number">6.</span> <span class="toc-text">第六款：打字特效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第七款：页面滚动顶部进度条加载效果代码"><span class="toc-number">7.</span> <span class="toc-text">第七款：页面滚动顶部进度条加载效果代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第八款：标题打字特效"><span class="toc-number">8.</span> <span class="toc-text">第八款：标题打字特效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第九款：文字抖动效果"><span class="toc-number">9.</span> <span class="toc-text">第九款：文字抖动效果</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第十款：社会主义价值观"><span class="toc-number">10.</span> <span class="toc-text">第十款：社会主义价值观</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第十一款：自定义滚动条"><span class="toc-number">11.</span> <span class="toc-text">第十一款：自定义滚动条</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        瞎折腾之好玩的代码片段汇总
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">容声之所</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2018-08-05T06:59:36.000Z" itemprop="datePublished">2018-08-05</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/分享发现/">分享发现</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/CSS/">CSS</a>, <a class="tag-link" href="/tags/JavaScrip/">JavaScrip</a>, <a class="tag-link" href="/tags/代码片段/">代码片段</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>记录一些有意思的JS代码片段，拿来即可用。</p>
+<a id="more"></a>
+<h4 id="第一款：给网站添加点击特效-心"><a href="#第一款：给网站添加点击特效-心" class="headerlink" title="第一款：给网站添加点击特效 心"></a>第一款：给网站添加点击特效 心</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">!function (e, t, a) &#123;</span><br><span class="line">function r() &#123;</span><br><span class="line">for (var e = 0; e &lt; s.length; e++) s[e].alpha &lt;= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = &quot;left:&quot; + s[e].x + &quot;px;top:&quot; + s[e].y + &quot;px;opacity:&quot; + s[e].alpha + &quot;;transform:scale(&quot; + s[e].scale + &quot;,&quot; + s[e].scale + &quot;) rotate(45deg);background:&quot; + s[e].color + &quot;;z-index:99999&quot;);</span><br><span class="line">requestAnimationFrame(r)</span><br><span class="line">&#125;</span><br><span class="line">function n() &#123;</span><br><span class="line">var t = &quot;function&quot; == typeof e.onclick &amp;&amp; e.onclick;</span><br><span class="line">e.onclick = function (e) &#123;</span><br><span class="line">t &amp;&amp; t(), o(e)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">function o(e) &#123;</span><br><span class="line">var a = t.createElement(&quot;div&quot;);</span><br><span class="line">a.className = &quot;heart&quot;, s.push(&#123;</span><br><span class="line">el: a,</span><br><span class="line">x: e.clientX - 5,</span><br><span class="line">y: e.clientY - 5,</span><br><span class="line">scale: 1,</span><br><span class="line">alpha: 1,</span><br><span class="line">color: c()</span><br><span class="line">&#125;), t.body.appendChild(a)</span><br><span class="line">&#125;</span><br><span class="line">function i(e) &#123;</span><br><span class="line">var a = t.createElement(&quot;style&quot;);</span><br><span class="line">a.type = &quot;text/css&quot;;</span><br><span class="line">try &#123;</span><br><span class="line">a.appendChild(t.createTextNode(e))</span><br><span class="line">&#125; catch (t) &#123;</span><br><span class="line">a.styleSheet.cssText = e</span><br><span class="line">&#125;</span><br><span class="line">t.getElementsByTagName(&quot;head&quot;)[0].appendChild(a)</span><br><span class="line">&#125;</span><br><span class="line">function c() &#123;</span><br><span class="line">return &quot;rgb(&quot; + ~~(255 * Math.random()) + &quot;,&quot; + ~~(255 * Math.random()) + &quot;,&quot; + ~~(255 * Math.random()) + &quot;)&quot;</span><br><span class="line">&#125;</span><br><span class="line">var s = [];</span><br><span class="line">e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) &#123;</span><br><span class="line">setTimeout(e, 1e3 / 60)</span><br><span class="line">&#125;, i(&quot;.heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: &apos;&apos;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;&quot;), n(), r()</span><br><span class="line">&#125;(window, document);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第二款：网站焦点监控"><a href="#第二款：网站焦点监控" class="headerlink" title="第二款：网站焦点监控"></a>第二款：网站焦点监控</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var OriginTitile = document.title,</span><br><span class="line">titleTime;</span><br><span class="line">document.addEventListener(&quot;visibilitychange&quot;,</span><br><span class="line">function() &#123;</span><br><span class="line">    if (document.hidden) &#123;</span><br><span class="line">        $;</span><br><span class="line">        document.title = &quot;哎呀，404 Not Found！&quot;;</span><br><span class="line">        clearTimeout(titleTime)</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        $;</span><br><span class="line">        document.title = &quot;咦，好像又好了？&quot; + OriginTitile;</span><br><span class="line">        titleTime = setTimeout(function() &#123;</span><br><span class="line">            document.title = OriginTitile</span><br><span class="line">        &#125;,</span><br><span class="line">        2000)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>Demo2</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    var originalTitle = document.title;</span><br><span class="line">    window.onblur = function()&#123;document.title = &apos;要玩捉迷藏吗&apos;&#125;;</span><br><span class="line">    window.onfocus = function()&#123;document.title = originalTitle&#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第三款：闪烁字体"><a href="#第三款：闪烁字体" class="headerlink" title="第三款：闪烁字体"></a>第三款：闪烁字体</h4><p>先在适当位置添加<code>&lt;p id=&quot;binft&quot;&gt;&lt;/p&gt;</code>，再引入<code>JavaScript</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">var binft = function (r) &#123;</span><br><span class="line">    function t() &#123;</span><br><span class="line">        return b[Math.floor(Math.random() * b.length)]</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function e() &#123;</span><br><span class="line">        return String.fromCharCode(94 * Math.random() + 33)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function n(r) &#123;</span><br><span class="line">        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) &#123;</span><br><span class="line">            var l = document.createElement(&quot;span&quot;);</span><br><span class="line">            l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line">        return n</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function i() &#123;</span><br><span class="line">        var t = o[c.skillI];</span><br><span class="line">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)</span><br><span class="line">    &#125;</span><br><span class="line">    var l = &quot;&quot;,</span><br><span class="line">        o = [&quot;无论蓬户荆扉&quot;, &quot;都将因你的倚闾&quot;, &quot;而成为我的凯旋门&quot;, &quot;生活琐碎&quot;, &quot;三两烈酒&quot;].map(function (r) &#123;</span><br><span class="line">            return r + &quot;.&quot;</span><br><span class="line">        &#125;),</span><br><span class="line">        a = 2,</span><br><span class="line">        g = 1,</span><br><span class="line">        s = 5,</span><br><span class="line">        d = 75,</span><br><span class="line">        b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],</span><br><span class="line">        c = &#123;</span><br><span class="line">            text: &quot;&quot;,</span><br><span class="line">            prefixP: -s,</span><br><span class="line">            skillI: 0,</span><br><span class="line">            skillP: 0,</span><br><span class="line">            direction: &quot;forward&quot;,</span><br><span class="line">            delay: a,</span><br><span class="line">            step: g</span><br><span class="line">        &#125;;</span><br><span class="line">    i()</span><br><span class="line">&#125;;</span><br><span class="line">binft(document.getElementById(&apos;binft&apos;));</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第四款：网站运营时间统计"><a href="#第四款：网站运营时间统计" class="headerlink" title="第四款：网站运营时间统计"></a>第四款：网站运营时间统计</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;本站已安全运行 &lt;b&gt; &lt;strong&gt; &lt;script language=&quot;JavaScript&quot; type =&quot;text/javascript&quot;&gt; var urodz = new Date(&quot;12/07/2017&quot;); var now = new Date(); var ile = now.getTime() - urodz.getTime(); var dni = Math.floor(ile / (1000 * 60 * 60 * 24)); document.write( + dni) &lt;/script&gt; &lt;/strong&gt; &lt;/b&gt; 天&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>第二种为 (像时钟一样走动)，合适位置添加<code>&lt;span&gt;博客已运行&lt;/span&gt;&lt;span id=bin_tm&gt;&lt;/span&gt;</code>，再引入<code>JavaScript</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">function show_date_time()&#123;window.setTimeout(&quot;show_date_time()&quot;,1e3);var BirthDay=new Date(&quot;2016/06/06 00:00:00&quot;),today=new Date,timeold=today.getTime()-BirthDay.getTime(),msPerDay=864e5,e_daysold=timeold/msPerDay,daysold=Math.floor(e_daysold),e_hrsold=24*(e_daysold-daysold),hrsold=Math.floor(e_hrsold),e_minsold=60*(e_hrsold-hrsold),minsold=Math.floor(60*(e_hrsold-hrsold)),seconds=Math.floor(60*(e_minsold-minsold));bin_tm.innerHTML=daysold+&quot;天&quot;+hrsold+&quot;小时&quot;+minsold+&quot;分&quot;+seconds+&quot;秒&quot;;&#125;</span><br><span class="line">show_date_time();&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第五款：复制弹窗提示"><a href="#第五款：复制弹窗提示" class="headerlink" title="第五款：复制弹窗提示"></a>第五款：复制弹窗提示</h4><p>引入<code>javascript</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;//cdn.hap5.top/code/layer/layer.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>并且在自定义<code>JavaScript</code>中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">        document.body.oncopy = function() &#123;layer.msg(&apos;复制成功,若要转载请务必保留原文链接！&apos;);&#125;;  </span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第六款：打字特效"><a href="#第六款：打字特效" class="headerlink" title="第六款：打字特效"></a>第六款：打字特效</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;//demo.fooor.cn/js/activate-power-mode.js &quot;&gt;&lt;/script&gt;  </span><br><span class="line">&lt;script&gt;  </span><br><span class="line">POWERMODE.colorful = true;  // 是否开启冒光特效  </span><br><span class="line">POWERMODE.shake = false;    // 是否开启抖动特效  </span><br><span class="line">document.body.addEventListener(&apos;input&apos;, POWERMODE); </span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第七款：页面滚动顶部进度条加载效果代码"><a href="#第七款：页面滚动顶部进度条加载效果代码" class="headerlink" title="第七款：页面滚动顶部进度条加载效果代码"></a>第七款：页面滚动顶部进度条加载效果代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;test&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;script src=&quot;jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;headBand.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">$(&apos;.test&apos;).headBand(&#123;//</span><br><span class="line">    &apos;background&apos;:&apos;#008aff&apos;,//颜色</span><br><span class="line">    &apos;height&apos;:&quot;1&quot;//宽度</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第八款：标题打字特效"><a href="#第八款：标题打字特效" class="headerlink" title="第八款：标题打字特效"></a>第八款：标题打字特效</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--标题打字特效引入--&gt;</span><br><span class="line">&lt;p id =&quot;typetitle&quot;&gt;可能我在也不会遇到第二这样的她&lt;/p&gt;</span><br><span class="line"> &lt;script&gt;</span><br><span class="line">            var typingbefore = document.getElementById(&quot;typetitle&quot;).innerText;//获取标题内容</span><br><span class="line">            document.getElementById(&apos;typetitle&apos;).innerText = &quot;&quot;;//将标题内容赋值为空</span><br><span class="line">            var i = 0;</span><br><span class="line">            function typetitle()&#123;</span><br><span class="line">                var typingafter = document.getElementById(&apos;typetitle&apos;);//获取标题元素</span><br><span class="line">                if(i &lt;= typingbefore.length)&#123;</span><br><span class="line">                    typingafter.innerHTML = typingbefore.slice(0,i++)+&apos;|&apos;;//将标题内容通过slice()方法返回</span><br><span class="line">                    setTimeout(&apos;typetitle()&apos;,100);//每100毫秒执行一次</span><br><span class="line">                &#125;else&#123;</span><br><span class="line">                    typingafter.innerHTML = typingbefore;//当标题内容全部返回后，去掉最后的‘|’</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            typetitle();</span><br><span class="line">            &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第九款：文字抖动效果"><a href="#第九款：文字抖动效果" class="headerlink" title="第九款：文字抖动效果"></a>第九款：文字抖动效果</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;doudong.css&quot;&gt;</span><br><span class="line">&lt;p id=&quot;shaky&quot; class=&quot;shaky c&quot;&gt;十一♥&lt;/p&gt;</span><br><span class="line">&lt;span class=&quot;shaky&quot; &gt;&lt;p id=&quot;shaky&quot;&gt;(●&apos;◡&apos;●)ﾉ&lt;/p&gt;&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第十款：社会主义价值观"><a href="#第十款：社会主义价值观" class="headerlink" title="第十款：社会主义价值观"></a>第十款：社会主义价值观</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt; </span><br><span class="line">/* 鼠标特效 */</span><br><span class="line">var a_idx = 0; </span><br><span class="line">jQuery(document).ready(function($) &#123; </span><br><span class="line">    $(&quot;body&quot;).click(function(e) &#123; </span><br><span class="line">        var a = new Array(&quot;富强&quot;, &quot;民主&quot;, &quot;文明&quot;, &quot;和谐&quot;, &quot;自由&quot;, &quot;平等&quot;, &quot;公正&quot; ,&quot;法治&quot;, &quot;爱国&quot;, &quot;敬业&quot;, &quot;诚信&quot;, &quot;友善&quot;); </span><br><span class="line">        var $i = $(&quot;&lt;span/&gt;&quot;).text(a[a_idx]); </span><br><span class="line">        a_idx = (a_idx + 1) % a.length; </span><br><span class="line">        var x = e.pageX, </span><br><span class="line">        y = e.pageY; </span><br><span class="line">        $i.css(&#123; </span><br><span class="line">            &quot;z-index&quot;: 999999999999999999999999999999999999999999999999999999999999999999999, </span><br><span class="line">            &quot;top&quot;: y - 20, </span><br><span class="line">            &quot;left&quot;: x, </span><br><span class="line">            &quot;position&quot;: &quot;absolute&quot;, </span><br><span class="line">            &quot;font-weight&quot;: &quot;bold&quot;, </span><br><span class="line">            &quot;color&quot;: &quot; #e8425c&quot;</span><br><span class="line">        &#125;); </span><br><span class="line">        $(&quot;body&quot;).append($i); </span><br><span class="line">        $i.animate(&#123; </span><br><span class="line">            &quot;top&quot;: y - 200, </span><br><span class="line">            &quot;opacity&quot;: 0 </span><br><span class="line">        &#125;, </span><br><span class="line">        1500, </span><br><span class="line">        function() &#123; </span><br><span class="line">            $i.remove(); </span><br><span class="line">        &#125;); </span><br><span class="line">    &#125;); </span><br><span class="line">&#125;); </span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="第十一款：自定义滚动条"><a href="#第十一款：自定义滚动条" class="headerlink" title="第十一款：自定义滚动条"></a>第十一款：自定义滚动条</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt; </span><br><span class="line">::-webkit-scrollbar &#123;width: 3px;height: 3px;&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;&#125;</span><br><span class="line">::-webkit-scrollbar-thumb &#123;background-color: #cccccc;background-image: -webkit-linear-gradient(24deg,  rgba(255, 255, 255, .3) 100%,  transparent 100%,  transparent);-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一款：给网站添加点击特效-心"><span class="toc-number">1.</span> <span class="toc-text">第一款：给网站添加点击特效 心</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第二款：网站焦点监控"><span class="toc-number">2.</span> <span class="toc-text">第二款：网站焦点监控</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第三款：闪烁字体"><span class="toc-number">3.</span> <span class="toc-text">第三款：闪烁字体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第四款：网站运营时间统计"><span class="toc-number">4.</span> <span class="toc-text">第四款：网站运营时间统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第五款：复制弹窗提示"><span class="toc-number">5.</span> <span class="toc-text">第五款：复制弹窗提示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第六款：打字特效"><span class="toc-number">6.</span> <span class="toc-text">第六款：打字特效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第七款：页面滚动顶部进度条加载效果代码"><span class="toc-number">7.</span> <span class="toc-text">第七款：页面滚动顶部进度条加载效果代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第八款：标题打字特效"><span class="toc-number">8.</span> <span class="toc-text">第八款：标题打字特效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第九款：文字抖动效果"><span class="toc-number">9.</span> <span class="toc-text">第九款：文字抖动效果</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第十款：社会主义价值观"><span class="toc-number">10.</span> <span class="toc-text">第十款：社会主义价值观</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第十一款：自定义滚动条"><span class="toc-number">11.</span> <span class="toc-text">第十一款：自定义滚动条</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&text=瞎折腾之好玩的代码片段汇总"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&is_video=false&description=瞎折腾之好玩的代码片段汇总"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=瞎折腾之好玩的代码片段汇总&body=Check out this article: https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&title=瞎折腾之好玩的代码片段汇总"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://blog.berwyn.cn/2018/08/瞎折腾之好玩的代码片段汇总.html&name=瞎折腾之好玩的代码片段汇总&description=&lt;p&gt;记录一些有意思的JS代码片段，拿来即可用。&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2019 言崇文
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+

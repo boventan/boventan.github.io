@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="这是一篇需要密码访问的文章。">
+<meta name="keywords" content="百度,前端技术,学习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="百度前端技术学院编码挑战">
+<meta property="og:url" content="https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html">
+<meta property="og:site_name" content="容声之所">
+<meta property="og:description" content="这是一篇需要密码访问的文章。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-08-11T04:30:29.685Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="百度前端技术学院编码挑战">
+<meta name="twitter:description" content="这是一篇需要密码访问的文章。">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.png">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+          
+        
+    
+    <!-- title -->
+    <title>百度前端技术学院编码挑战</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+    <style type="text/css"> 
+      ::-webkit-scrollbar {width: 1px;height: 1px;}
+      ::-webkit-scrollbar-track {-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;}
+      ::-webkit-scrollbar-thumb {background-color: #cccccc;background-image: -webkit-linear-gradient(24deg,  rgba(255, 255, 255, .3) 100%,  transparent 100%,  transparent);-webkit-border-radius: 2em;-moz-border-radius: 2em;border-radius:2em;}
+</style>
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2018/05/如何零基础快速制作出一个.apk.html"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2018/01/这两年免费薅过的一些虚拟货币的羊毛.html"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&text=百度前端技术学院编码挑战"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&is_video=false&description=百度前端技术学院编码挑战"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=百度前端技术学院编码挑战&body=Check out this article: https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&name=百度前端技术学院编码挑战&description=这是一篇需要密码访问的文章。&lt;/br&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        百度前端技术学院编码挑战
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">容声之所</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2018-04-22T16:54:51.000Z" itemprop="datePublished">2018-04-23</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/学习笔记/">学习笔记</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/前端技术/">前端技术</a>, <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>, <a class="tag-link" href="/tags/百度/">百度</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <div id="security"> <div class="input-container"> <input type="password" class="form-control" id="pass" placeholder=" 且慢，来者止步，请先对一下暗号！ " /> <label for="pass"> 且慢，来者止步，请先对一下暗号！ </label> <div class="bottom-line"></div> </div> </div> <div id="encrypt-blog" style="display:none"> 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 </div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&text=百度前端技术学院编码挑战"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&is_video=false&description=百度前端技术学院编码挑战"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=百度前端技术学院编码挑战&body=Check out this article: https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&title=百度前端技术学院编码挑战"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://blog.berwyn.cn/2018/04/百度前端技术学院编码挑战.html&name=百度前端技术学院编码挑战&description=这是一篇需要密码访问的文章。&lt;/br&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2019 言崇文
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
